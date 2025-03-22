@@ -283,7 +283,7 @@ else:
         if not check_match_date_selected:
             form_rendering()
         else:
-            st.header("You Have Already Made selection for this match")
+            st.header("Your selections are locked for today")
             display_details_of_the_prediction()
         ## Add Questions
 
