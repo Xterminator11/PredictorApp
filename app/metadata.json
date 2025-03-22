@@ -1,0 +1,20 @@
+{
+    "questions" : [
+        {
+            "questions" : "",
+            "display_type" : ""
+        }
+    ],
+    "teams_image" : {
+        "Kolkata Knight Riders" : "https://1000logos.net/wp-content/uploads/2024/03/Kolkata-Knight-Riders-Logo-1536x864.png",
+        "Royal Challengers Bengaluru" : "https://1000logos.net/wp-content/uploads/2024/03/Royal-Challengers-Bengaluru-Logo.png",
+        "Sunrisers Hyderabad" : "https://1000logos.net/wp-content/uploads/2024/03/Sunrisers-Hyderabad-Logo.png",
+        "Rajasthan Royals" : "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png",
+        "Chennai Super Kings": "https://1000logos.net/wp-content/uploads/2024/03/Chennai-Super-Kings-Logo.png",
+        "Mumbai Indians": "https://1000logos.net/wp-content/uploads/2022/08/Mumbai-Indians-Logo.png",
+        "Delhi Capitals": "https://1000logos.net/wp-content/uploads/2024/03/Delhi-Capitals-Logo.png",
+        "Lucknow Super Giants": "https://1000logos.net/wp-content/uploads/2024/03/Lucknow-Super-Giants-Logo.png",
+        "Gujarat Titans": "https://1000logos.net/wp-content/uploads/2024/03/Gujarat-Titans-Logo.png",
+        "Punjab Kings": "https://1000logos.net/wp-content/uploads/2022/09/Punjab-Kings-Logo.png"
+    }
+}
