@@ -2,7 +2,6 @@ import streamlit as st
 import json
 import os
 import socket
-from st_files_connection import FilesConnection
 import boto3
 from jsonpath_ng.ext import parse
 from datetime import datetime, timedelta
