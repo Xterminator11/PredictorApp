@@ -7,12 +7,16 @@ from jsonpath_ng.ext import parse
 from datetime import datetime, timedelta
 import datetime as dt
 import pandas as pd
+import botocore
+from botocore.errorfactory import ClientError
+from jsonpath_ng.ext import parse
 
 st.session_state.json_metadata = json.loads(
     open(
         os.path.join(os.path.dirname(__file__), "metadata.json"), "r", encoding="utf-8"
     ).read()
 )
+
 
 title_alignment = """
 <style>
@@ -31,9 +35,40 @@ def login_screen():
 
 
 def store_data_values():
-    # s3_bucket = boto3.client('s3')
-    # s3_bucket.upload_file()
-    pass
+
+    if len(st.session_state.next_matches) == 0:
+        st.subheader("No Matches to be played")
+        pass
+    else:
+        ## Add headers
+
+        match_details = json.loads(st.session_state.next_matches)[0]
+
+        user_name = str(st.session_state.user_name).replace(" ", "").lower()
+        match_id = match_details.get("MatchNumber")
+        json_data = {
+            "UserName": user_name,
+            "MatchId": match_id,
+            "MatchTime": match_details.get("DateUtc"),
+            "SubmitTime": datetime.now(tz=dt.timezone.utc).strftime(
+                format="%Y-%m-%d %H:%M:%S"
+            ),
+        }
+        selections = []
+        for question in st.session_state.json_metadata.get("question_list"):
+            selections.append(
+                {
+                    "q_key": question.get("q_key"),
+                    "q_val": st.session_state.get(question.get("q_key")),
+                }
+            )
+        json_data["Selections"] = selections
+        s3object = f"{user_name}/{user_name}_{match_id}.json"
+
+        s3 = boto3.resource("s3")
+        s3object = s3.Object("predictor-app-dallas-ipl2025", s3object)
+
+        s3object.put(Body=(bytes(json.dumps(json_data).encode("UTF-8"))))
 
 
 def get_next_match_from_json() -> list:
@@ -65,13 +100,12 @@ def get_next_match_from_json() -> list:
 def body_rendering():
     ## Now lets add match details.
 
-    next_matches = get_next_match_from_json()
-    if len(next_matches) == 0:
+    if len(st.session_state.next_matches) == 0:
         st.subheader("No Matches to be played")
     else:
         ## Add headers
 
-        match_details = json.loads(next_matches)[0]
+        match_details = json.loads(st.session_state.next_matches)[0]
         left, middle, right = st.columns(3, border=True, vertical_alignment="center")
 
         left.image(
@@ -102,77 +136,139 @@ def body_rendering():
 
 def form_rendering():
 
-    next_matches = get_next_match_from_json()
-    if len(next_matches) == 0:
+    if len(st.session_state.next_matches) == 0:
         st.subheader("No Matches to be played")
     else:
         ## Add headers
 
-        match_details = json.loads(next_matches)[0]
+        match_details = json.loads(st.session_state.next_matches)[0]
 
         with st.form("predictions", clear_on_submit=True, enter_to_submit=False):
-            st.radio(
-                label="Who Will win the game? (5 pts)",
-                options=[
-                    match_details.get("HomeTeam"),
-                    match_details.get("AwayTeam"),
-                ],
-                key="winner",
-            )
-            st.radio(
-                label="Which team will score most sixes? (10 pts)",
-                options=[
-                    match_details.get("HomeTeam"),
-                    match_details.get("AwayTeam"),
-                ],
-                key="sixes",
-            )
-            st.radio(
-                label="Which team will score most fours? (10 pts)",
-                options=[
-                    match_details.get("HomeTeam"),
-                    match_details.get("AwayTeam"),
-                ],
-                key="fours",
-            )
-            st.radio(
-                label="Which team will take most wickets? (10 pts)",
-                options=[
-                    match_details.get("HomeTeam"),
-                    match_details.get("AwayTeam"),
-                ],
-                key="wickets",
-            )
-            st.radio(
-                label="Will there be a century in this game? (5 pts)",
-                options=["Yes", "No"],
-                key="century",
-            )
-            st.slider(
-                label="What will be the score posted by {}?".format(
-                    match_details.get("HomeTeam")
-                ),
-                key="score_home",
-                min_value=1,
-                max_value=400,
-            )
-            st.slider(
-                label="What will be the score posted by {}?".format(
-                    match_details.get("AwayTeam")
-                ),
-                key="score_away",
-                min_value=1,
-                max_value=400,
-            )
+
+            for questions in st.session_state.json_metadata.get("question_list"):
+                left_container, right_container = st.columns(2, border=False)
+                left_container.text(questions.get("questions"))
+                if questions.get("display_type") == "radio":
+                    right_container.radio(
+                        label="Select Below",
+                        options=[
+                            match_details.get("HomeTeam"),
+                            match_details.get("AwayTeam"),
+                        ],
+                        key=questions.get("q_key"),
+                    )
+                elif questions.get("display_type") == "slider":
+                    right_container.slider(
+                        label="Select Below",
+                        key=questions.get("q_key"),
+                        min_value=1,
+                        max_value=1000,
+                    )
+                else:
+                    continue
             st.form_submit_button("Submit Predictions", on_click=store_data_values)
+
+
+def check_match_date_selected():
+
+    if len(st.session_state.next_matches) == 0:
+        st.subheader("No Matches to be played")
+        return True
+    else:
+        ## Add headers
+
+        match_details = json.loads(st.session_state.next_matches)[0]
+        user_name = str(st.session_state.user_name).replace(" ", "").lower()
+        match_id = match_details.get("MatchNumber")
+
+        s3object = f"{user_name}/{user_name}_{match_id}.json"
+        s3 = boto3.client("s3")
+        try:
+            s3.head_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+        except botocore.exceptions.ClientError as e:
+            if e.response["Error"]["Code"] == "404":
+                return False
+            else:
+                return True
+        return True
+
+
+def clear_selections():
+
+    if len(st.session_state.next_matches) == 0:
+        st.subheader("No Matches to be played")
+        return True
+    else:
+        ## Add headers
+
+        match_details = json.loads(st.session_state.next_matches)[0]
+        user_name = str(st.session_state.user_name).replace(" ", "").lower()
+        match_id = match_details.get("MatchNumber")
+
+        s3object = f"{user_name}/{user_name}_{match_id}.json"
+        s3 = boto3.client("s3")
+        try:
+            s3.delete_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+        except botocore.exceptions.ClientError as e:
+            if e.response["Error"]["Code"] == "404":
+                return False
+            else:
+                return True
+        return True
+
+
+def display_details_of_the_prediction():
+
+    if len(st.session_state.next_matches) == 0:
+        st.subheader("No Matches to be played")
+        pass
+    else:
+        ## Add headers
+
+        match_details = json.loads(st.session_state.next_matches)[0]
+        user_name = str(st.session_state.user_name).replace(" ", "").lower()
+        match_id = match_details.get("MatchNumber")
+
+        s3object = f"{user_name}/{user_name}_{match_id}.json"
+        s3 = boto3.client("s3")
+        try:
+            data = s3.get_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+            contents = json.loads(data["Body"].read().decode("utf-8"))
+
+            for data_selections in contents.get("Selections"):
+                left, right = st.columns(2, vertical_alignment="center")
+                for question in st.session_state.json_metadata.get("question_list"):
+                    if question.get("q_key") == data_selections.get("q_key"):
+                        left.text(question.get("questions"))
+                        right.text(data_selections.get("q_val"))
+                    else:
+                        continue
+
+            st.button(
+                "Do you want to clear all your selection?",
+                key="clear",
+                on_click=clear_selections,
+            )
+        except botocore.exceptions.ClientError as e:
+            if e.response["Error"]["Code"] == "404":
+                return False
+            else:
+                return True
+        return True
 
 
 if socket.gethostname() == "MacBookPro.lan":
     st.session_state.user_name = "Gururaj Tester"
+    st.session_state.next_matches = get_next_match_from_json()
     st.header(f"Welcome, {st.session_state.user_name}!")
     body_rendering()
     ## Add Questions
-    form_rendering()
+    check_match_date_selected = check_match_date_selected()
+    if not check_match_date_selected:
+        form_rendering()
+    else:
+        st.header("Your selections are locked for today")
+        display_details_of_the_prediction()
 
     st.button("Log out", on_click=st.logout)
 else:
@@ -180,9 +276,15 @@ else:
         login_screen()
     else:
         st.session_state.user_name = st.experimental_user.name
+        st.session_state.next_matches = get_next_match_from_json()
         st.header(f"Welcome, {st.session_state.user_name}!")
         body_rendering()
-        form_rendering()
+        check_match_date_selected = check_match_date_selected()
+        if not check_match_date_selected:
+            form_rendering()
+        else:
+            st.header("You Have Already Made selection for this match")
+            display_details_of_the_prediction()
         ## Add Questions
 
         st.button("Log out", on_click=st.logout)

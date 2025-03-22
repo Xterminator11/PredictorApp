@@ -1,20 +1,46 @@
 {
-    "questions" : [
-        {
-            "questions" : "",
-            "display_type" : ""
-        }
-    ],
-    "teams_image" : {
-        "Kolkata Knight Riders" : "https://1000logos.net/wp-content/uploads/2024/03/Kolkata-Knight-Riders-Logo-1536x864.png",
-        "Royal Challengers Bengaluru" : "https://1000logos.net/wp-content/uploads/2024/03/Royal-Challengers-Bengaluru-Logo.png",
-        "Sunrisers Hyderabad" : "https://1000logos.net/wp-content/uploads/2024/03/Sunrisers-Hyderabad-Logo.png",
-        "Rajasthan Royals" : "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png",
-        "Chennai Super Kings": "https://1000logos.net/wp-content/uploads/2024/03/Chennai-Super-Kings-Logo.png",
-        "Mumbai Indians": "https://1000logos.net/wp-content/uploads/2022/08/Mumbai-Indians-Logo.png",
-        "Delhi Capitals": "https://1000logos.net/wp-content/uploads/2024/03/Delhi-Capitals-Logo.png",
-        "Lucknow Super Giants": "https://1000logos.net/wp-content/uploads/2024/03/Lucknow-Super-Giants-Logo.png",
-        "Gujarat Titans": "https://1000logos.net/wp-content/uploads/2024/03/Gujarat-Titans-Logo.png",
-        "Punjab Kings": "https://1000logos.net/wp-content/uploads/2022/09/Punjab-Kings-Logo.png"
+  "question_list": [
+    {
+      "questions": "Who Will win the game? (5 pts)",
+      "display_type": "radio",
+      "q_key": "winner"
+    },
+    {
+      "questions": "Which team will score most fours? (10 pts)",
+      "display_type": "radio",
+      "q_key": "fours"
+    },
+    {
+      "questions": "Which team will score most sixes? (10 pts)",
+      "display_type": "radio",
+      "q_key": "sixes"
+    },
+    {
+      "questions": "Which team will take most wickets? (10 pts)",
+      "display_type": "radio",
+      "q_key": "wickets"
+    },
+    {
+      "questions": "Which team will score more runs is power play? (5 pts)",
+      "display_type": "radio",
+      "q_key": "powerplay"
+    },
+    {
+      "questions": "What will be the total score posted by both the teams?",
+      "display_type": "slider",
+      "q_key": "totalscore"
     }
+  ],
+  "teams_image": {
+    "Kolkata Knight Riders": "https://1000logos.net/wp-content/uploads/2024/03/Kolkata-Knight-Riders-Logo-1536x864.png",
+    "Royal Challengers Bengaluru": "https://1000logos.net/wp-content/uploads/2024/03/Royal-Challengers-Bengaluru-Logo.png",
+    "Sunrisers Hyderabad": "https://1000logos.net/wp-content/uploads/2024/03/Sunrisers-Hyderabad-Logo.png",
+    "Rajasthan Royals": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png",
+    "Chennai Super Kings": "https://1000logos.net/wp-content/uploads/2024/03/Chennai-Super-Kings-Logo.png",
+    "Mumbai Indians": "https://1000logos.net/wp-content/uploads/2022/08/Mumbai-Indians-Logo.png",
+    "Delhi Capitals": "https://1000logos.net/wp-content/uploads/2024/03/Delhi-Capitals-Logo.png",
+    "Lucknow Super Giants": "https://1000logos.net/wp-content/uploads/2024/03/Lucknow-Super-Giants-Logo.png",
+    "Gujarat Titans": "https://1000logos.net/wp-content/uploads/2024/03/Gujarat-Titans-Logo.png",
+    "Punjab Kings": "https://1000logos.net/wp-content/uploads/2022/09/Punjab-Kings-Logo.png"
+  }
 }
