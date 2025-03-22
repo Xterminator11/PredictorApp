@@ -99,7 +99,16 @@ def body_rendering():
         #     "https://www.creativefabrica.com/wp-content/uploads/2021/11/09/Versus-Vs-Vector-Transparent-Background-Graphics-19913250-2-580x386.png"
         # )
 
-        ## Add Questions
+
+def form_rendering():
+
+    next_matches = get_next_match_from_json()
+    if len(next_matches) == 0:
+        st.subheader("No Matches to be played")
+    else:
+        ## Add headers
+
+        match_details = json.loads(next_matches)[0]
 
         with st.form("predictions", clear_on_submit=True, enter_to_submit=False):
             st.radio(
@@ -157,14 +166,15 @@ def body_rendering():
             )
             st.form_submit_button("Submit Predictions", on_click=store_data_values)
 
-        st.button("Log out", on_click=st.logout)
-
 
 if socket.gethostname() == "MacBookPro.lan":
     st.session_state.user_name = "Gururaj Tester"
     st.header(f"Welcome, {st.session_state.user_name}!")
     body_rendering()
+    ## Add Questions
+    form_rendering()
 
+    st.button("Log out", on_click=st.logout)
 else:
     if not st.experimental_user.is_logged_in:
         login_screen()
@@ -172,3 +182,7 @@ else:
         st.session_state.user_name = st.experimental_user.name
         st.header(f"Welcome, {st.session_state.user_name}!")
         body_rendering()
+        form_rendering()
+        ## Add Questions
+
+        st.button("Log out", on_click=st.logout)
