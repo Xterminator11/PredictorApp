@@ -54,8 +54,8 @@ def body_rendering():
         st.radio(label="Which team will score most fours? (10 pts)",options=[match_details.get("matches").get("home"),match_details.get("matches").get("away")],key="fours")
         st.radio(label="Which team will take most wickets? (10 pts)",options=[match_details.get("matches").get("home"),match_details.get("matches").get("away")],key="wickets")
         st.radio(label="Will there be a century in this game? (5 pts)",options=["Yes", "No"],key="century")
-        st.text_input(label="What will be the score posted by {}?".format(match_details.get("matches").get("home")),key="score_home")
-        st.text_input(label="What will be the score posted by {}?".format(match_details.get("matches").get("away")),key="score_away")
+        st.number_input(label="What will be the score posted by {}?".format(match_details.get("matches").get("home")),key="score_home",min_value=1,max_value=400)
+        st.number_input(label="What will be the score posted by {}?".format(match_details.get("matches").get("away")),key="score_away",min_value=1,max_value=400)
 
 
 
