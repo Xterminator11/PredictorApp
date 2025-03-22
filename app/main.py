@@ -239,7 +239,7 @@ def display_details_of_the_prediction():
                 left, right = st.columns(2, vertical_alignment="center")
                 for question in st.session_state.json_metadata.get("question_list"):
                     if question.get("q_key") == data_selections.get("q_key"):
-                        left.text(question.get("questions"))
+                        left.subheader(question.get("questions"))
                         right.text(data_selections.get("q_val"))
                     else:
                         continue
