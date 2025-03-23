@@ -248,7 +248,7 @@ def display_details_of_the_prediction():
                 for question in st.session_state.json_metadata.get("question_list"):
                     if question.get("q_key") == data_selections.get("q_key"):
                         left.subheader(
-                            f"{question.get("questions")} ({question.get("points")} Points)"
+                            f":orange[{question.get("questions")} ({question.get("points")} Points)]"
                         )
                         right.text(data_selections.get("q_val"))
                     else:
