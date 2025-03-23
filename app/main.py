@@ -268,7 +268,7 @@ def display_details_of_the_prediction():
 
 
 if socket.gethostname() == "MacBookPro.lan":
-    st.session_state.user_name = "Gururaj Tester"
+    st.session_state.user_name = "Gururaj Rao"
     st.session_state.next_matches = get_next_match_from_json()
     st.header(f"Welcome, {st.session_state.user_name}!")
     body_rendering()

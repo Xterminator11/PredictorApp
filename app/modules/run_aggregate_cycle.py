@@ -94,22 +94,27 @@ def update_statistics(match_status, users):
                     2,
                 )
 
-                point.append(str(percentage_deviation))
+                point.append(float(percentage_deviation))
             else:
-                if user_selection == correct_selection:
-                    point.append(str(question.get("points")))
+                if correct_selection == "Tie" and user_selection != "":
+                    point.append(float(question.get("points")))
                 else:
-                    point.append(str(0))
+                    if user_selection == correct_selection:
+                        point.append(float(question.get("points")))
+                    else:
+                        point.append(float(0))
 
-        df_player = pd.DataFrame(
-            {
-                "Points": point,
-            }
-        )
+        # print(point)
+        # df_player = pd.DataFrame(
+        #     {
+        #         "Points": point,
+        #     }
+        # )
 
-    return json.loads(
-        df_player.agg({"Points": ["sum"]}).fillna(0).to_json(orient="records")
-    )[0]
+    # return json.loads(
+    #     df_player.agg({"Points": sum}).fillna(0).to_json(orient="records")
+    # )[0]
+    return sum(point)
 
 
 s3 = boto3.resource("s3")
@@ -129,11 +134,12 @@ for matches in json_match:
     if matches.get("ResultsPublished") is True:
         for users in list(set(user_list)):
             data_point = update_statistics(matches, users)
+            print(data_point)
             final_data_to_save_in_s3.append(
                 {
                     "MatchNumber": f"{matches.get('MatchNumber')} - {matches.get('HomeTeam')} vs {matches.get('AwayTeam')}",
                     "UserName": users,
-                    "AggregatePoints": float(data_point.get("Points")),
+                    "AggregatePoints": float(data_point),
                 }
             )
     else:
@@ -148,12 +154,21 @@ s3object.put(Body=(bytes(json.dumps(final_data_to_save_in_s3).encode("UTF-8"))))
 
 
 aggregate_df = pd.DataFrame(final_data_to_save_in_s3)
+aggregate_df = aggregate_df[["UserName", "AggregatePoints"]]
 
-sum_values = aggregate_df.groupby("UserName")
+grouped_counts = (
+    aggregate_df.groupby("UserName")
+    .sum()
+    .sort_values(by="AggregatePoints", ascending=False)
+)
+print(grouped_counts)
+grouped_counts = grouped_counts.reset_index(names="UserName")
 # sum_values = grouped["AggregatePoints"].sum()
-print(sum_values)
+print(grouped_counts)
 
 s3object = "aggregates/leaderboard.txt"
 s3 = boto3.resource("s3")
 s3object = s3.Object("predictor-app-dallas-ipl2025", s3object)
-s3object.put(Body=(bytes(json.dumps(json.loads(sum_values.to_json())).encode("UTF-8"))))
+s3object.put(
+    Body=(bytes(json.dumps(json.loads(grouped_counts.to_json())).encode("UTF-8")))
+)

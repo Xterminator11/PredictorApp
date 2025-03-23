@@ -175,7 +175,7 @@ def update_statistics():
                 )
                 point.append(str(percentage_deviation))
             else:
-                if correct_selection == "Tie":
+                if correct_selection == "Tie" and user_selection != "":
                     point.append(str(question.get("points")))
                 else:
                     if user_selection == correct_selection:
@@ -195,7 +195,7 @@ def update_statistics():
 
 
 if socket.gethostname() == "MacBookPro.lan":
-    st.session_state.user_name = "Gururaj Tester"
+    st.session_state.user_name = "Gururaj Rao"
     st.subheader("This section contains individual games")
     selections = []
     for matches in st.session_state.json_match:
@@ -219,7 +219,7 @@ if socket.gethostname() == "MacBookPro.lan":
 
         st.divider()
         st.subheader("Prediction Results for the match")
-        if "df" in st.session_state:
+        if "df_player" in st.session_state:
             st.table(st.session_state.df_player)
 
     # Render Statistics
@@ -253,6 +253,6 @@ else:
 
             st.divider()
             st.subheader("Prediction Results for the match")
-            if "df" in st.session_state:
+            if "df_player" in st.session_state:
                 st.table(st.session_state.df_player)
         st.button("Log out", on_click=st.logout)
