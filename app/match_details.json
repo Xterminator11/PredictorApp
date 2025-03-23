@@ -47,8 +47,31 @@
     "HomeTeamScore": null,
     "AwayTeamScore": null,
     "ActiveIndicator": false,
-    "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "MatchCompletionStatus": "Completed",
+    "ResultsPublished": true,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "286",
+      "HomeTeam_wickets": "6",
+      "AwayTeam_totalscore": "242",
+      "AwayTeam_wickets": "6",
+      "AwayTeam_fours": "17",
+      "AwayTeam_sixes": "18",
+      "HomeTeam_fours": "34",
+      "HomeTeam_sixes": "12",
+      "HomeTeam_powerplay": "94",
+      "AwayTeam_powerplay": "77",
+      "HomeTeam_winner": "Won",
+      "AwayTeam_winner": "Lost",
+      "StatsLink": "https://www.espncricinfo.com/series/ipl-2025-1449924/sunrisers-hyderabad-vs-rajasthan-royals-2nd-match-1473439/ball-by-ball-commentary"
+    },
+    "PredictionResults": {
+      "winner": "Sunrisers Hyderabad",
+      "fours": "Sunrisers Hyderabad",
+      "sixes": "Rajasthan Royals",
+      "wickets": "Tie",
+      "powerplay": "Sunrisers Hyderabad",
+      "totalscore": "528"
+    }
   },
   {
     "MatchNumber": 3,

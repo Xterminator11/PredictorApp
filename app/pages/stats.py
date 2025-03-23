@@ -152,7 +152,7 @@ def update_statistics():
                     user_selection = 0
                 else:
                     user_selection = ""
-            prediction.append(user_selection)
+            prediction.append(str(user_selection))
 
             if question.get("q_key") == "totalscore":
                 correct_score = int(correct_selection)
@@ -170,16 +170,18 @@ def update_statistics():
                         )
                         / 100
                     )
-                    * 10,
+                    * int(question.get("points")),
                     2,
                 )
-
                 point.append(str(percentage_deviation))
             else:
-                if user_selection == correct_selection:
+                if correct_selection == "Tie":
                     point.append(str(question.get("points")))
                 else:
-                    point.append(str(0))
+                    if user_selection == correct_selection:
+                        point.append(str(question.get("points")))
+                    else:
+                        point.append(str(0))
 
         df_player = pd.DataFrame(
             {
