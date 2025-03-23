@@ -41,3 +41,13 @@ if __name__ == "__main__":
         print("No Matches to be played")
     else:
         print(next_matches)
+
+    correct_score = 200
+    your_score = 287
+
+    percentage_deviation = round(
+        ((abs(100 - abs(((correct_score - your_score) / (correct_score)) * 100))) / 100)
+        * 10,
+        2,
+    )
+    print(percentage_deviation)
