@@ -1,34 +1,47 @@
 {
   "question_list": [
     {
-      "questions": "Who Will win the game? (5 pts)",
+      "questions": "Who Will win the game?",
       "display_type": "radio",
-      "q_key": "winner"
+      "q_key": "winner",
+      "points": 5,
+      "stats_key":"Winner of the game"
     },
     {
-      "questions": "Which team will score most fours? (10 pts)",
+      "questions": "Which team will score most fours?",
       "display_type": "radio",
-      "q_key": "fours"
+      "q_key": "fours",
+      "points": 5,
+      "stats_key":"Total Fours"
     },
     {
-      "questions": "Which team will score most sixes? (10 pts)",
+      "questions": "Which team will score most sixes?",
       "display_type": "radio",
-      "q_key": "sixes"
+      "q_key": "sixes",
+      "points": 5,
+      "stats_key":"Total Sixes"
     },
     {
-      "questions": "Which team will take most wickets? (10 pts)",
+      "questions": "Which team will take most wickets?",
       "display_type": "radio",
-      "q_key": "wickets"
+      "q_key": "wickets",
+      "points": 5,
+      "stats_key":"Total Wickets"
+      
     },
     {
-      "questions": "Which team will score more runs is power play? (5 pts)",
+      "questions": "Which team will score more runs is power play?",
       "display_type": "radio",
-      "q_key": "powerplay"
+      "q_key": "powerplay",
+      "points": 5,
+      "stats_key":"Total Score in Power Play"
     },
     {
       "questions": "What will be the total score posted by both the teams?",
       "display_type": "slider",
-      "q_key": "totalscore"
+      "q_key": "totalscore",
+      "points": 10,
+      "stats_key":"Team Score"
     }
   ],
   "teams_image": {

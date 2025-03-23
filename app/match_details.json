@@ -9,7 +9,32 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Completed",
+    "ResultsPublished": true,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "174",
+      "HomeTeam_wickets": "8",
+      "AwayTeam_totalscore": "177",
+      "AwayTeam_wickets": "3",
+      "AwayTeam_fours": "21",
+      "AwayTeam_sixes": "7",
+      "HomeTeam_fours": "18",
+      "HomeTeam_sixes": "8",
+      "HomeTeam_powerplay": "60",
+      "AwayTeam_powerplay": "80",
+      "HomeTeam_winner": "Lost",
+      "AwayTeam_winner": "Won",
+      "StatsLink": "https://www.espncricinfo.com/series/ipl-2025-1449924/kolkata-knight-riders-vs-royal-challengers-bengaluru-1st-match-1473438/ball-by-ball-commentary"
+    },
+    "PredictionResults": {
+      "winner": "Royal Challengers Bengaluru",
+      "fours": "Royal Challengers Bengaluru",
+      "sixes": "Kolkata Knight Riders",
+      "wickets": "Royal Challengers Bengaluru",
+      "powerplay": "Royal Challengers Bengaluru",
+      "totalscore": "351"
+    }
   },
   {
     "MatchNumber": 2,
@@ -21,7 +46,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 3,
@@ -33,7 +60,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 4,
@@ -45,7 +74,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 5,
@@ -57,7 +88,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 6,
@@ -69,7 +102,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 7,
@@ -81,7 +116,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 8,
@@ -93,7 +130,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 9,
@@ -105,7 +144,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 10,
@@ -117,7 +158,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 11,
@@ -129,7 +172,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 12,
@@ -141,7 +186,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 13,
@@ -153,7 +200,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 14,
@@ -165,7 +214,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 15,
@@ -177,7 +228,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 16,
@@ -189,7 +242,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 17,
@@ -201,7 +256,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 18,
@@ -213,7 +270,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 19,
@@ -225,7 +284,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 20,
@@ -237,7 +298,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 21,
@@ -249,7 +312,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 22,
@@ -261,7 +326,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 23,
@@ -273,7 +340,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 24,
@@ -285,7 +354,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 25,
@@ -297,7 +368,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 26,
@@ -309,7 +382,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 27,
@@ -321,7 +396,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 28,
@@ -333,7 +410,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 29,
@@ -345,7 +424,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 30,
@@ -357,7 +438,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 31,
@@ -369,7 +452,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 32,
@@ -381,7 +466,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 33,
@@ -393,7 +480,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 34,
@@ -405,7 +494,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 35,
@@ -417,7 +508,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 36,
@@ -429,7 +522,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 37,
@@ -441,7 +536,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 38,
@@ -453,7 +550,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 39,
@@ -465,7 +564,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 40,
@@ -477,7 +578,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 41,
@@ -489,7 +592,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 42,
@@ -501,7 +606,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 43,
@@ -513,7 +620,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 44,
@@ -525,7 +634,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 45,
@@ -537,7 +648,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 46,
@@ -549,7 +662,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 47,
@@ -561,7 +676,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 48,
@@ -573,7 +690,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 49,
@@ -585,7 +704,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 50,
@@ -597,7 +718,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 51,
@@ -609,7 +732,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 52,
@@ -621,7 +746,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 53,
@@ -633,7 +760,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 54,
@@ -645,7 +774,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 55,
@@ -657,7 +788,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 56,
@@ -669,7 +802,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 57,
@@ -681,7 +816,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 58,
@@ -693,7 +830,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 59,
@@ -705,7 +844,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 60,
@@ -717,7 +858,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 61,
@@ -729,7 +872,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 62,
@@ -741,7 +886,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 63,
@@ -753,7 +900,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 64,
@@ -765,7 +914,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 65,
@@ -777,7 +928,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 66,
@@ -789,7 +942,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 67,
@@ -801,7 +956,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 68,
@@ -813,7 +970,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 69,
@@ -825,7 +984,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 70,
@@ -837,7 +998,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 71,
@@ -849,7 +1012,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 72,
@@ -861,7 +1026,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 73,
@@ -873,7 +1040,9 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   },
   {
     "MatchNumber": 74,
@@ -885,6 +1054,8 @@
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null,
-    "ActiveIndicator": false
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false
   }
 ]

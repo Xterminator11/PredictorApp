@@ -10,6 +10,7 @@ import pandas as pd
 import botocore
 from botocore.errorfactory import ClientError
 from jsonpath_ng.ext import parse
+from modules.navigator import Navbar
 
 st.session_state.json_metadata = json.loads(
     open(
@@ -17,6 +18,11 @@ st.session_state.json_metadata = json.loads(
     ).read()
 )
 
+st.set_page_config(
+    page_title="Predictor Home Page",
+    page_icon="https://brandlogos.net/wp-content/uploads/2021/12/indian_premier_league-brandlogo.net_.png",
+)
+Navbar()
 
 title_alignment = """
 <style>
@@ -145,22 +151,24 @@ def form_rendering():
 
         with st.form("predictions", clear_on_submit=True, enter_to_submit=False):
 
-            for questions in st.session_state.json_metadata.get("question_list"):
+            for question in st.session_state.json_metadata.get("question_list"):
                 left_container, right_container = st.columns(2, border=False)
-                left_container.text(questions.get("questions"))
-                if questions.get("display_type") == "radio":
+                left_container.text(
+                    f"{question.get("questions")} ({question.get("points")} Points)"
+                )
+                if question.get("display_type") == "radio":
                     right_container.radio(
                         label="Select Below",
                         options=[
                             match_details.get("HomeTeam"),
                             match_details.get("AwayTeam"),
                         ],
-                        key=questions.get("q_key"),
+                        key=question.get("q_key"),
                     )
-                elif questions.get("display_type") == "slider":
+                elif question.get("display_type") == "slider":
                     right_container.slider(
                         label="Select Below",
-                        key=questions.get("q_key"),
+                        key=question.get("q_key"),
                         min_value=1,
                         max_value=1000,
                     )
@@ -239,7 +247,9 @@ def display_details_of_the_prediction():
                 left, right = st.columns(2, vertical_alignment="center")
                 for question in st.session_state.json_metadata.get("question_list"):
                     if question.get("q_key") == data_selections.get("q_key"):
-                        left.subheader(question.get("questions"))
+                        left.subheader(
+                            f"{question.get("questions")} ({question.get("points")} Points)"
+                        )
                         right.text(data_selections.get("q_val"))
                     else:
                         continue
@@ -269,6 +279,8 @@ if socket.gethostname() == "MacBookPro.lan":
     else:
         st.header("Your selections are locked for today")
         display_details_of_the_prediction()
+
+    # Render Statistics
 
     st.button("Log out", on_click=st.logout)
 else:
