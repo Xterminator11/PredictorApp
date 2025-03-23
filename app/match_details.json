@@ -84,8 +84,31 @@
     "HomeTeamScore": null,
     "AwayTeamScore": null,
     "ActiveIndicator": false,
-    "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "MatchCompletionStatus": "Completed",
+    "ResultsPublished": true,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "158",
+      "HomeTeam_wickets": "6",
+      "AwayTeam_totalscore": "155",
+      "AwayTeam_wickets": "9",
+      "AwayTeam_fours": "13",
+      "AwayTeam_sixes": "5",
+      "HomeTeam_fours": "9",
+      "HomeTeam_sixes": "8",
+      "HomeTeam_powerplay": "62",
+      "AwayTeam_powerplay": "52",
+      "HomeTeam_winner": "Won",
+      "AwayTeam_winner": "Lost",
+      "StatsLink": "https://www.espncricinfo.com/series/ipl-2025-1449924/chennai-super-kings-vs-mumbai-indians-3rd-match-1473440/ball-by-ball-commentary"
+    },
+    "PredictionResults": {
+      "winner": "Chennai Super Kings",
+      "fours": "Mumbai Indians",
+      "sixes": "Chennai Super Kings",
+      "wickets": "Chennai Super Kings",
+      "powerplay": "Chennai Super Kings",
+      "totalscore": "313"
+    }
   },
   {
     "MatchNumber": 4,
