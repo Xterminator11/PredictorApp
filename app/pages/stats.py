@@ -75,6 +75,7 @@ def update_statistics():
             continue
 
     if not match_status.get("ResultsPublished"):
+        st.session_state.statistics_url = "Not Available"
         df = pd.DataFrame(
             {
                 "Stats": ["Not Available"],
@@ -96,6 +97,9 @@ def update_statistics():
 
     else:
 
+        st.session_state.statistics_url = match_status.get("ResultsStats").get(
+            "StatsLink"
+        )
         # Get the Status By Team
         stats_list = []
         home_team = []
@@ -214,6 +218,10 @@ if socket.gethostname() == "MacBookPro.lan":
     with st.container():
         st.divider()
         st.subheader("Statistics of the match")
+        if "statistics_url" in st.session_state:
+            st.markdown(
+                f"Statistics Provided by [espncricinfo]({st.session_state.statistics_url})"
+            )
         if "df" in st.session_state:
             st.table(st.session_state.df)
 
@@ -248,6 +256,10 @@ else:
         with st.container():
             st.divider()
             st.subheader("Statistics of the match")
+            if "statistics_url" in st.session_state:
+                st.markdown(
+                    f"Statistics Provided by [link]({st.session_state.statistics_url})"
+                )
             if "df" in st.session_state:
                 st.table(st.session_state.df)
 
