@@ -226,30 +226,31 @@ if socket.gethostname() == "MacBookPro.lan":
 else:
     if not st.experimental_user.is_logged_in or "name" not in st.experimental_user:
         login_screen()
-    st.session_state.user_name = st.experimental_user.name
-    st.subheader("This section contains individual games")
-    selections = []
-    for matches in st.session_state.json_match:
-        selections.append(
-            f"{matches.get("MatchNumber")} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+    else:
+        st.session_state.user_name = st.experimental_user.name
+        st.subheader("This section contains individual games")
+        selections = []
+        for matches in st.session_state.json_match:
+            selections.append(
+                f"{matches.get("MatchNumber")} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+            )
+        st.selectbox(
+            "Pick The Game",
+            options=selections,
+            on_change=update_statistics,
+            index=None,
+            placeholder="Choose a match",
+            key="selected_option",
         )
-    st.selectbox(
-        "Pick The Game",
-        options=selections,
-        on_change=update_statistics,
-        index=None,
-        placeholder="Choose a match",
-        key="selected_option",
-    )
 
-    with st.container():
-        st.divider()
-        st.subheader("Statistics of the match")
-        if "df" in st.session_state:
-            st.table(st.session_state.df)
+        with st.container():
+            st.divider()
+            st.subheader("Statistics of the match")
+            if "df" in st.session_state:
+                st.table(st.session_state.df)
 
-        st.divider()
-        st.subheader("Prediction Results for the match")
-        if "df" in st.session_state:
-            st.table(st.session_state.df_player)
-    st.button("Log out", on_click=st.logout)
+            st.divider()
+            st.subheader("Prediction Results for the match")
+            if "df" in st.session_state:
+                st.table(st.session_state.df_player)
+        st.button("Log out", on_click=st.logout)
