@@ -122,7 +122,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 5,
@@ -136,7 +159,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 6,
@@ -150,7 +196,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 7,
@@ -164,7 +233,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 8,
@@ -178,7 +270,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 9,
@@ -192,7 +307,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 10,
@@ -206,7 +344,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 11,
@@ -220,7 +381,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 12,
@@ -234,7 +418,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 13,
@@ -248,7 +455,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 14,
@@ -262,7 +492,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 15,
@@ -276,7 +529,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 16,
@@ -290,7 +566,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 17,
@@ -304,7 +603,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 18,
@@ -318,7 +640,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 19,
@@ -332,7 +677,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 20,
@@ -346,7 +714,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 21,
@@ -360,7 +751,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 22,
@@ -374,7 +788,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 23,
@@ -388,7 +825,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 24,
@@ -402,7 +862,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 25,
@@ -416,7 +899,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 26,
@@ -430,7 +936,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 27,
@@ -444,7 +973,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 28,
@@ -458,7 +1010,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 29,
@@ -472,7 +1047,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 30,
@@ -486,7 +1084,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 31,
@@ -500,7 +1121,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 32,
@@ -514,7 +1158,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 33,
@@ -528,7 +1195,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 34,
@@ -542,7 +1232,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 35,
@@ -556,7 +1269,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 36,
@@ -570,7 +1306,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 37,
@@ -584,7 +1343,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 38,
@@ -598,7 +1380,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 39,
@@ -612,7 +1417,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 40,
@@ -626,7 +1454,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 41,
@@ -640,7 +1491,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 42,
@@ -654,7 +1528,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 43,
@@ -668,7 +1565,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 44,
@@ -682,7 +1602,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 45,
@@ -696,7 +1639,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 46,
@@ -710,7 +1676,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 47,
@@ -724,7 +1713,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 48,
@@ -738,7 +1750,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 49,
@@ -752,7 +1787,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 50,
@@ -766,7 +1824,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 51,
@@ -780,7 +1861,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 52,
@@ -794,7 +1898,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 53,
@@ -808,7 +1935,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 54,
@@ -822,7 +1972,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 55,
@@ -836,7 +2009,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 56,
@@ -850,7 +2046,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 57,
@@ -864,7 +2083,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 58,
@@ -878,7 +2120,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 59,
@@ -892,7 +2157,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 60,
@@ -906,7 +2194,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 61,
@@ -920,7 +2231,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 62,
@@ -934,7 +2268,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 63,
@@ -948,7 +2305,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 64,
@@ -962,7 +2342,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 65,
@@ -976,7 +2379,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 66,
@@ -990,7 +2416,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 67,
@@ -1004,7 +2453,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 68,
@@ -1018,7 +2490,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 69,
@@ -1032,7 +2527,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 70,
@@ -1046,7 +2564,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 71,
@@ -1060,7 +2601,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 72,
@@ -1074,7 +2638,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 73,
@@ -1088,7 +2675,30 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   },
   {
     "MatchNumber": 74,
@@ -1102,6 +2712,29 @@
     "AwayTeamScore": null,
     "ActiveIndicator": false,
     "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
+    }
   }
 ]

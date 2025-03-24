@@ -223,12 +223,22 @@ if socket.gethostname() == "MacBookPro.lan":
                 f"Statistics Provided by [espncricinfo]({st.session_state.statistics_url})"
             )
         if "df" in st.session_state:
-            st.table(st.session_state.df)
+            st.dataframe(
+                data=st.session_state.df,
+                on_select="ignore",
+                hide_index=True,
+                use_container_width=True,
+            )
 
         st.divider()
         st.subheader("Prediction Results for the match")
         if "df_player" in st.session_state:
-            st.table(st.session_state.df_player)
+            st.dataframe(
+                data=st.session_state.df_player,
+                on_select="ignore",
+                hide_index=True,
+                use_container_width=True,
+            )
 
     # Render Statistics
 
@@ -261,10 +271,20 @@ else:
                     f"Statistics Provided by [link]({st.session_state.statistics_url})"
                 )
             if "df" in st.session_state:
-                st.table(st.session_state.df)
+                st.dataframe(
+                    data=st.session_state.df,
+                    on_select="ignore",
+                    hide_index=True,
+                    use_container_width=True,
+                )
 
             st.divider()
             st.subheader("Prediction Results for the match")
             if "df_player" in st.session_state:
-                st.table(st.session_state.df_player)
+                st.dataframe(
+                    data=st.session_state.df_player,
+                    on_select="ignore",
+                    hide_index=True,
+                    use_container_width=True,
+                )
         st.button("Log out", on_click=st.logout)

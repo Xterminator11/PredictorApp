@@ -75,12 +75,22 @@ if socket.gethostname() == "MacBookPro.lan":
         st.divider()
         st.subheader("Overall Leaderboard")
         if "df_leaderboard" in st.session_state:
-            st.table(st.session_state.df_leaderboard)
+            st.dataframe(
+                data=st.session_state.df_leaderboard,
+                on_select="ignore",
+                hide_index=True,
+                use_container_width=True,
+            )
 
         st.divider()
         st.subheader("Your Selections")
         if "df_individual" in st.session_state:
-            st.table(st.session_state.df_individual)
+            st.dataframe(
+                data=st.session_state.df_individual,
+                on_select="ignore",
+                hide_index=True,
+                use_container_width=True,
+            )
 
     # Render Statistics
 
@@ -98,11 +108,21 @@ else:
         st.divider()
         st.subheader("Overall Leaderboard")
         if "df_leaderboard" in st.session_state:
-            st.table(st.session_state.df_leaderboard)
+            st.dataframe(
+                data=st.session_state.df_leaderboard,
+                on_select="ignore",
+                hide_index=True,
+                use_container_width=True,
+            )
 
         st.divider()
         st.subheader("Your Selections")
         if "df_individual" in st.session_state:
-            st.table(st.session_state.df_individual)
+            st.dataframe(
+                data=st.session_state.df_individual,
+                on_select="ignore",
+                hide_index=True,
+                use_container_width=True,
+            )
 
         st.button("Log out", on_click=st.logout)
