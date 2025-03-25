@@ -14,6 +14,8 @@ st.set_page_config(
     page_icon="https://brandlogos.net/wp-content/uploads/2021/12/indian_premier_league-brandlogo.net_.png",
 )
 
+st.session_state.booster_value = 1
+
 st.session_state.json_metadata = json.loads(
     open(
         os.path.join(os.path.dirname(os.path.dirname(__file__)), "metadata.json"),
@@ -118,7 +120,6 @@ def update_statistics():
             continue
 
     booster_1, booster_2, booster_3, contents_booster = get_booster_information()
-    st.session_state.booster_value = 1
 
     for booster in contents_booster.keys():
         if contents_booster.get(booster) == int(match_number):
@@ -214,6 +215,8 @@ def update_statistics():
                     user_selection = ""
             prediction.append(str(user_selection))
 
+            # Point Selection
+
             if question.get("q_key") == "totalscore":
                 correct_score = int(correct_selection)
                 your_score = int(user_selection)
@@ -291,6 +294,10 @@ if socket.gethostname() == "MacBookPro.lan":
             )
 
         st.divider()
+        if st.session_state.booster_value != 1:
+            st.subheader(
+                f":red[Booster selected for this game : {st.session_state.booster_value}x]"
+            )
         st.subheader("Prediction Results for the match")
         if "df_player" in st.session_state:
             st.dataframe(
@@ -339,6 +346,10 @@ else:
                 )
 
             st.divider()
+            if st.session_state.booster_value != 1:
+                st.subheader(
+                    f":red[Booster selected for this game : {st.session_state.booster_value}x]"
+                )
             st.subheader("Prediction Results for the match")
             if "df_player" in st.session_state:
                 st.dataframe(
