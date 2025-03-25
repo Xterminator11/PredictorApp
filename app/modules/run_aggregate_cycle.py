@@ -21,6 +21,41 @@ json_match = json.loads(
 )
 
 
+def get_booster_information(match_status, user_name):
+
+    user_name = str(user_name).replace(" ", "").lower()
+    match_id = match_status.get("MatchNumber")
+
+    booster_data_found = False
+    s3object = f"{user_name}/match_booster.json"
+    s3 = boto3.client("s3")
+    try:
+        s3.head_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+        booster_data_found = True
+    except botocore.exceptions.ClientError as e:
+        if e.response["Error"]["Code"] == "404":
+            booster_data_found = False
+        else:
+            booster_data_found = False
+
+    booster_1 = False
+    booster_2 = False
+    booster_3 = False
+
+    if booster_data_found is False:
+        booster_data = {"booster_1": 0, "booster_2": 0, "booster_3": 0}
+
+    else:
+        data = s3.get_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+        booster_data = json.loads(data["Body"].read().decode("utf-8"))
+
+        booster_1 = True if booster_data.get("booster_1") > 0 else False
+        booster_2 = True if booster_data.get("booster_2") > 0 else False
+        booster_3 = True if booster_data.get("booster_3") > 0 else False
+
+    return booster_1, booster_2, booster_3, booster_data
+
+
 def get_individual_data_from_backend(match_id, user_name):
 
     ## Add headers
@@ -51,6 +86,20 @@ def update_statistics(match_status, users):
 
     else:
 
+        booster_1, booster_2, booster_3, contents_booster = get_booster_information(
+            match_status, users
+        )
+        booster_value = 1
+
+        for booster in contents_booster.keys():
+            if contents_booster.get(booster) == int(match_status.get("MatchNumber")):
+                booster_details = (
+                    "5x"
+                    if booster == "booster_1"
+                    else "3x" if booster == "booster_2" else "2x"
+                )
+                # st.subheader(f"Booster Selected for this match : {booster_details}")
+                booster_value = int(booster_details.replace("x", ""))
         point = []
         for question in json_metadata.get("question_list"):
             correct_selection = match_status.get("PredictionResults").get(
@@ -94,13 +143,13 @@ def update_statistics(match_status, users):
                     2,
                 )
 
-                point.append(float(percentage_deviation))
+                point.append(float(percentage_deviation * booster_value))
             else:
                 if correct_selection == "Tie" and user_selection != "":
-                    point.append(float(question.get("points")))
+                    point.append(float(question.get("points") * booster_value))
                 else:
                     if user_selection == correct_selection:
-                        point.append(float(question.get("points")))
+                        point.append(float(question.get("points") * booster_value))
                     else:
                         point.append(float(0))
 
@@ -131,6 +180,7 @@ for my_bucket_object in my_bucket.objects.all():
 final_data_to_save_in_s3 = []
 
 for matches in json_match:
+    print("Running for match number {}".format(matches.get("MatchNumber")))
     if matches.get("ResultsPublished") is True:
         for users in list(set(user_list)):
             data_point = update_statistics(matches, users)

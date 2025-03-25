@@ -40,6 +40,127 @@ def login_screen():
     st.button("Log in with Google", on_click=st.login)
 
 
+def multi_select_check_1():
+    if st.session_state.booster_2 or st.session_state.booster_3:
+        st.session_state.booster_2 = False
+        st.session_state.booster_3 = False
+
+
+def multi_select_check_2():
+    if st.session_state.booster_1 or st.session_state.booster_3:
+        st.session_state.booster_1 = False
+        st.session_state.booster_3 = False
+
+
+def multi_select_check_3():
+    if st.session_state.booster_2 or st.session_state.booster_1:
+        st.session_state.booster_2 = False
+        st.session_state.booster_1 = False
+
+
+def get_booster_information():
+
+    if len(st.session_state.next_matches) == 0:
+        st.subheader("No Matches to be played")
+        return False, False, False, {}
+    else:
+        ## Add headers
+
+        match_details = json.loads(st.session_state.next_matches)[0]
+
+        user_name = str(st.session_state.user_name).replace(" ", "").lower()
+        match_id = match_details.get("MatchNumber")
+
+        booster_data_found = False
+        s3object = f"{user_name}/match_booster.json"
+        s3 = boto3.client("s3")
+        try:
+            s3.head_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+            booster_data_found = True
+        except botocore.exceptions.ClientError as e:
+            if e.response["Error"]["Code"] == "404":
+                booster_data_found = False
+            else:
+                booster_data_found = False
+
+        booster_1 = False
+        booster_2 = False
+        booster_3 = False
+
+        if booster_data_found is False:
+            booster_data = {"booster_1": 0, "booster_2": 0, "booster_3": 0}
+
+        else:
+            data = s3.get_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+            booster_data = json.loads(data["Body"].read().decode("utf-8"))
+
+            booster_1 = True if booster_data.get("booster_1") > 0 else False
+            booster_2 = True if booster_data.get("booster_2") > 0 else False
+            booster_3 = True if booster_data.get("booster_3") > 0 else False
+
+    return booster_1, booster_2, booster_3, booster_data
+
+
+def store_booster_information():
+
+    if len(st.session_state.next_matches) == 0:
+        st.subheader("No Matches to be played")
+        return False, False, False, {}
+    else:
+        ## Add headers
+
+        match_details = json.loads(st.session_state.next_matches)[0]
+
+        user_name = str(st.session_state.user_name).replace(" ", "").lower()
+        match_id = match_details.get("MatchNumber")
+
+        booster_1, booster_2, booster_3, booster_data = get_booster_information()
+
+        if st.session_state.booster_1 is True:
+            booster_data["booster_1"] = match_id
+
+        if st.session_state.booster_2 is True:
+            booster_data["booster_2"] = match_id
+
+        if st.session_state.booster_3 is True:
+            booster_data["booster_3"] = match_id
+
+        s3object = f"{user_name}/match_booster.json"
+
+        s3 = boto3.resource("s3")
+        s3object = s3.Object("predictor-app-dallas-ipl2025", s3object)
+
+        s3object.put(Body=(bytes(json.dumps(booster_data).encode("UTF-8"))))
+
+
+def clear_booster_details():
+
+    if len(st.session_state.next_matches) == 0:
+        st.subheader("No Matches to be played")
+        return False, False, False, {}
+    else:
+        ## Add headers
+
+        match_details = json.loads(st.session_state.next_matches)[0]
+
+        user_name = str(st.session_state.user_name).replace(" ", "").lower()
+        match_id = match_details.get("MatchNumber")
+
+        booster_1, booster_2, booster_3, booster_data = get_booster_information()
+
+        for booster_keys in booster_data.keys():
+            if booster_data.get(booster_keys) == match_id:
+                booster_data[booster_keys] = 0
+            else:
+                continue
+
+        s3object = f"{user_name}/match_booster.json"
+
+        s3 = boto3.resource("s3")
+        s3object = s3.Object("predictor-app-dallas-ipl2025", s3object)
+        s3object.put(Body=(bytes(json.dumps(booster_data).encode("UTF-8"))))
+
+
 def store_data_values():
 
     if len(st.session_state.next_matches) == 0:
@@ -75,6 +196,10 @@ def store_data_values():
         s3object = s3.Object("predictor-app-dallas-ipl2025", s3object)
 
         s3object.put(Body=(bytes(json.dumps(json_data).encode("UTF-8"))))
+
+        # Store Booster Data
+
+        store_booster_information()
 
 
 def get_next_match_from_json() -> list:
@@ -149,8 +274,51 @@ def form_rendering():
 
         match_details = json.loads(st.session_state.next_matches)[0]
 
-        with st.form("predictions", clear_on_submit=True, enter_to_submit=False):
+        st.subheader("Select Booster for this match")
+        booster_1, booster_2, booster_3 = st.columns(3, border=True)
+        st.divider()
 
+        booster_5x, booster_3x, booster_2x, booster_data = get_booster_information()
+
+        booster_1.toggle(
+            "5x 🔥🔥🔥🔥🔥",
+            disabled=booster_5x,
+            label_visibility="visible",
+            help=(
+                "5X of your total score"
+                if booster_5x is False
+                else f"Booster was used in match number {booster_data.get("booster_1")}"
+            ),
+            key="booster_1",
+            on_change=multi_select_check_1,
+        )
+        booster_2.toggle(
+            "3x 🔥🔥🔥 ",
+            disabled=booster_3x,
+            label_visibility="visible",
+            help=(
+                "3X of your total score"
+                if booster_3x is False
+                else f"Booster was used in match number {booster_data.get("booster_2")}"
+            ),
+            key="booster_2",
+            on_change=multi_select_check_2,
+        )
+        booster_3.toggle(
+            "2x 🔥🔥",
+            disabled=booster_2x,
+            label_visibility="visible",
+            help=(
+                "2X of your total score"
+                if booster_2x is False
+                else f"Booster was used in match number {booster_data.get("booster_3")}"
+            ),
+            key="booster_3",
+            on_change=multi_select_check_3,
+        )
+
+        with st.form("predictions", clear_on_submit=True, enter_to_submit=False):
+            st.subheader("Select Predictions for this match")
             for question in st.session_state.json_metadata.get("question_list"):
                 left_container, right_container = st.columns(2, border=False)
                 left_container.text(
@@ -217,6 +385,7 @@ def clear_selections():
         s3 = boto3.client("s3")
         try:
             s3.delete_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+            clear_booster_details()
         except botocore.exceptions.ClientError as e:
             if e.response["Error"]["Code"] == "404":
                 return False
@@ -239,9 +408,20 @@ def display_details_of_the_prediction():
 
         s3object = f"{user_name}/{user_name}_{match_id}.json"
         s3 = boto3.client("s3")
+
+        booster_1, booster_2, booster_3, contents_booster = get_booster_information()
         try:
             data = s3.get_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
             contents = json.loads(data["Body"].read().decode("utf-8"))
+
+            for booster in contents_booster.keys():
+                if contents_booster.get(booster) == match_id:
+                    booster_details = (
+                        "5x"
+                        if booster == "booster_1"
+                        else "3x" if booster == "booster_2" else "2x"
+                    )
+                    st.subheader(f"Booster Selected for this match : {booster_details}")
 
             for data_selections in contents.get("Selections"):
                 left, right = st.columns(2, vertical_alignment="center")
