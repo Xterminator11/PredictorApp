@@ -39,6 +39,49 @@ def login_screen():
     st.button("Log in with Google", on_click=st.login)
 
 
+def get_booster_information():
+
+    if len(st.session_state.next_matches) == 0:
+        st.subheader("No Matches to be played")
+        return False, False, False, {}
+    else:
+        ## Add headers
+
+        match_details = json.loads(st.session_state.next_matches)[0]
+
+        user_name = str(st.session_state.user_name).replace(" ", "").lower()
+        match_id = match_details.get("MatchNumber")
+
+        booster_data_found = False
+        s3object = f"{user_name}/match_booster.json"
+        s3 = boto3.client("s3")
+        try:
+            s3.head_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+            booster_data_found = True
+        except botocore.exceptions.ClientError as e:
+            if e.response["Error"]["Code"] == "404":
+                booster_data_found = False
+            else:
+                booster_data_found = False
+
+        booster_1 = False
+        booster_2 = False
+        booster_3 = False
+
+        if booster_data_found is False:
+            booster_data = {"booster_1": 0, "booster_2": 0, "booster_3": 0}
+
+        else:
+            data = s3.get_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+            booster_data = json.loads(data["Body"].read().decode("utf-8"))
+
+            booster_1 = True if booster_data.get("booster_1") > 0 else False
+            booster_2 = True if booster_data.get("booster_2") > 0 else False
+            booster_3 = True if booster_data.get("booster_3") > 0 else False
+
+    return booster_1, booster_2, booster_3, booster_data
+
+
 def get_individual_data_from_backend(match_id):
 
     ## Add headers
@@ -73,6 +116,19 @@ def update_statistics():
             match_status = matches
         else:
             continue
+
+    booster_1, booster_2, booster_3, contents_booster = get_booster_information()
+    st.session_state.booster_value = 1
+
+    for booster in contents_booster.keys():
+        if contents_booster.get(booster) == int(match_number):
+            booster_details = (
+                "5x"
+                if booster == "booster_1"
+                else "3x" if booster == "booster_2" else "2x"
+            )
+            st.subheader(f"Booster Selected for this match : {booster_details}")
+            st.session_state.booster_value = int(booster_details.replace("x", ""))
 
     if not match_status.get("ResultsPublished"):
         st.session_state.statistics_url = "Not Available"
@@ -177,13 +233,17 @@ def update_statistics():
                     * int(question.get("points")),
                     2,
                 )
-                point.append(str(percentage_deviation))
+                point.append(str(percentage_deviation * st.session_state.booster_value))
             else:
                 if correct_selection == "Tie" and user_selection != "":
-                    point.append(str(question.get("points")))
+                    point.append(
+                        str(question.get("points") * st.session_state.booster_value)
+                    )
                 else:
                     if user_selection == correct_selection:
-                        point.append(str(question.get("points")))
+                        point.append(
+                            str(question.get("points") * st.session_state.booster_value)
+                        )
                     else:
                         point.append(str(0))
 
