@@ -8,6 +8,7 @@ from modules.navigator import Navbar
 import socket
 import botocore
 from botocore.errorfactory import ClientError
+import datetime as dt
 
 st.set_page_config(
     page_title="Predictor Statistics",
@@ -41,45 +42,65 @@ def login_screen():
     st.button("Log in with Google", on_click=st.login)
 
 
-def get_booster_information():
+def get_next_match_from_json() -> list:
 
-    if len(st.session_state.next_matches) == 0:
-        st.subheader("No Matches to be played")
-        return False, False, False, {}
-    else:
-        ## Add headers
+    match_details_json = os.path.join(
+        os.path.dirname(os.path.dirname(__file__)), "match_details.json"
+    )
 
-        match_details = json.loads(st.session_state.next_matches)[0]
+    data_frame = pd.read_json(
+        match_details_json,
+        orient="records",
+        convert_dates=["DateUtc"],
+    )
 
-        user_name = str(st.session_state.user_name).replace(" ", "").lower()
-        match_id = match_details.get("MatchNumber")
+    current_time = pd.Timestamp.now(tz=dt.timezone.utc)
+    # Filter Data Frame Now
 
-        booster_data_found = False
-        s3object = f"{user_name}/match_booster.json"
-        s3 = boto3.client("s3")
-        try:
-            s3.head_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
-            booster_data_found = True
-        except botocore.exceptions.ClientError as e:
-            if e.response["Error"]["Code"] == "404":
-                booster_data_found = False
-            else:
-                booster_data_found = False
+    data_frame = data_frame[data_frame["DateUtc"] > current_time.to_datetime64()]
 
-        booster_1 = False
-        booster_2 = False
-        booster_3 = False
+    data_frame = data_frame[
+        data_frame["MatchNumber"] == data_frame["MatchNumber"].min()
+    ]
 
-        if booster_data_found is False:
-            booster_data = {"booster_1": 0, "booster_2": 0, "booster_3": 0}
+    if len(data_frame) == 0:
+        return []
+    return data_frame.fillna("").to_json(
+        orient="records", date_format="iso", date_unit="s"
+    )
 
+
+def get_booster_information(match_status, user_name):
+
+    user_name = str(user_name).replace(" ", "").lower()
+    match_id = match_status.get("MatchNumber")
+
+    booster_data_found = False
+    s3object = f"{user_name}/match_booster.json"
+    s3 = boto3.client("s3")
+    try:
+        s3.head_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+        booster_data_found = True
+    except botocore.exceptions.ClientError as e:
+        if e.response["Error"]["Code"] == "404":
+            booster_data_found = False
         else:
-            data = s3.get_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
-            booster_data = json.loads(data["Body"].read().decode("utf-8"))
+            booster_data_found = False
 
-            booster_1 = True if booster_data.get("booster_1") > 0 else False
-            booster_2 = True if booster_data.get("booster_2") > 0 else False
-            booster_3 = True if booster_data.get("booster_3") > 0 else False
+    booster_1 = False
+    booster_2 = False
+    booster_3 = False
+
+    if booster_data_found is False:
+        booster_data = {"booster_1": 0, "booster_2": 0, "booster_3": 0}
+
+    else:
+        data = s3.get_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+        booster_data = json.loads(data["Body"].read().decode("utf-8"))
+
+        booster_1 = True if booster_data.get("booster_1") > 0 else False
+        booster_2 = True if booster_data.get("booster_2") > 0 else False
+        booster_3 = True if booster_data.get("booster_3") > 0 else False
 
     return booster_1, booster_2, booster_3, booster_data
 
@@ -119,7 +140,9 @@ def update_statistics():
         else:
             continue
 
-    booster_1, booster_2, booster_3, contents_booster = get_booster_information()
+    booster_1, booster_2, booster_3, contents_booster = get_booster_information(
+        match_status, st.session_state.user_name
+    )
 
     for booster in contents_booster.keys():
         if contents_booster.get(booster) == int(match_number):
@@ -128,7 +151,6 @@ def update_statistics():
                 if booster == "booster_1"
                 else "3x" if booster == "booster_2" else "2x"
             )
-            st.subheader(f"Booster Selected for this match : {booster_details}")
             st.session_state.booster_value = int(booster_details.replace("x", ""))
 
     if not match_status.get("ResultsPublished"):
@@ -263,20 +285,25 @@ def update_statistics():
 
 if socket.gethostname() == "MacBookPro.lan":
     st.session_state.user_name = "Gururaj Rao"
+    st.session_state.next_matches = get_next_match_from_json()
     st.subheader("This section contains individual games")
     selections = []
     for matches in st.session_state.json_match:
-        selections.append(
-            f"{matches.get("MatchNumber")} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
-        )
+        if matches.get("MatchCompletionStatus") == "Completed":
+            selections.append(
+                f"{matches.get("MatchNumber")} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+            )
+    selections.sort(reverse=True)
     st.selectbox(
         "Pick The Game",
         options=selections,
         on_change=update_statistics,
-        index=None,
-        placeholder="Choose a match",
+        # index=None,
+        # placeholder="Choose a match",
         key="selected_option",
+        disabled=False,
     )
+    update_statistics()
 
     with st.container():
         st.divider()
@@ -311,16 +338,20 @@ if socket.gethostname() == "MacBookPro.lan":
 
     st.button("Log out", on_click=st.logout)
 else:
+
     if not st.experimental_user.is_logged_in or "name" not in st.experimental_user:
         login_screen()
     else:
+        st.session_state.next_matches = get_next_match_from_json()
         st.session_state.user_name = st.experimental_user.name
         st.subheader("This section contains individual games")
         selections = []
         for matches in st.session_state.json_match:
-            selections.append(
-                f"{matches.get("MatchNumber")} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
-            )
+            if matches.get("MatchCompletionStatus") == "Completed":
+                selections.append(
+                    f"{matches.get("MatchNumber")} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+                )
+        selections.sort(reverse=True)
         st.selectbox(
             "Pick The Game",
             options=selections,
@@ -329,6 +360,8 @@ else:
             placeholder="Choose a match",
             key="selected_option",
         )
+
+        update_statistics()
 
         with st.container():
             st.divider()
