@@ -356,8 +356,8 @@ else:
             "Pick The Game",
             options=selections,
             on_change=update_statistics,
-            index=None,
-            placeholder="Choose a match",
+            # index=None,
+            # placeholder="Choose a match",
             key="selected_option",
         )
 
