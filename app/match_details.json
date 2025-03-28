@@ -272,27 +272,27 @@
     "MatchCompletionStatus": "Not Started",
     "ResultsPublished": false,
     "ResultsStats": {
-      "HomeTeam_totalscore": "NOT_PUBLISHED",
-      "HomeTeam_wickets": "NOT_PUBLISHED",
-      "AwayTeam_totalscore": "NOT_PUBLISHED",
-      "AwayTeam_wickets": "NOT_PUBLISHED",
-      "AwayTeam_fours": "NOT_PUBLISHED",
-      "AwayTeam_sixes": "NOT_PUBLISHED",
-      "HomeTeam_fours": "NOT_PUBLISHED",
-      "HomeTeam_sixes": "NOT_PUBLISHED",
-      "HomeTeam_powerplay": "NOT_PUBLISHED",
-      "AwayTeam_powerplay": "NOT_PUBLISHED",
-      "HomeTeam_winner": "NOT_PUBLISHED",
-      "AwayTeam_winner": "NOT_PUBLISHED",
-      "StatsLink": "NOT_PUBLISHED"
+      "HomeTeam_totalscore": "146",
+      "HomeTeam_wickets": "8",
+      "AwayTeam_totalscore": "196",
+      "AwayTeam_wickets": "7",
+      "AwayTeam_fours": "15",
+      "AwayTeam_sixes": "12",
+      "HomeTeam_fours": "15",
+      "HomeTeam_sixes": "4",
+      "HomeTeam_powerplay": "30",
+      "AwayTeam_powerplay": "56",
+      "HomeTeam_winner": "Lost",
+      "AwayTeam_winner": "Won",
+      "StatsLink": "https://www.espncricinfo.com/series/ipl-2025-1449924/chennai-super-kings-vs-royal-challengers-bengaluru-8th-match-1473445/ball-by-ball-commentary"
     },
     "PredictionResults": {
-      "winner": "NOT_PUBLISHED",
-      "fours": "NOT_PUBLISHED",
-      "sixes": "NOT_PUBLISHED",
-      "wickets": "NOT_PUBLISHED",
-      "powerplay": "NOT_PUBLISHED",
-      "totalscore": "NOT_PUBLISHED"
+      "winner": "Royal Challengers Bengaluru",
+      "fours": "Tie",
+      "sixes": "Royal Challengers Bengaluru",
+      "wickets": "Royal Challengers Bengaluru",
+      "powerplay": "Royal Challengers Bengaluru",
+      "totalscore": "342"
     }
   },
   {
