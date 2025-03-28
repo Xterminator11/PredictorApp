@@ -269,8 +269,8 @@
     "HomeTeamScore": null,
     "AwayTeamScore": null,
     "ActiveIndicator": false,
-    "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false,
+    "MatchCompletionStatus": "Completed",
+    "ResultsPublished": true,
     "ResultsStats": {
       "HomeTeam_totalscore": "146",
       "HomeTeam_wickets": "8",
