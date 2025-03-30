@@ -290,8 +290,13 @@ if socket.gethostname() == "MacBookPro.lan":
     selections = []
     for matches in st.session_state.json_match:
         if matches.get("MatchCompletionStatus") == "Completed":
+            match_number = (
+                str(matches.get("MatchNumber"))
+                if matches.get("MatchNumber") > 9
+                else f"0{matches.get("MatchNumber")}"
+            )
             selections.append(
-                f"{matches.get("MatchNumber")} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+                f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
             )
     selections.sort(reverse=True)
     st.selectbox(
@@ -348,8 +353,13 @@ else:
         selections = []
         for matches in st.session_state.json_match:
             if matches.get("MatchCompletionStatus") == "Completed":
+                match_number = (
+                    str(matches.get("MatchNumber"))
+                    if matches.get("MatchNumber") > 9
+                    else f"0{matches.get("MatchNumber")}"
+                )
                 selections.append(
-                    f"{matches.get("MatchNumber")} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+                    f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
                 )
         selections.sort(reverse=True)
         st.selectbox(
