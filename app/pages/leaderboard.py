@@ -55,6 +55,7 @@ def get_aggregate_data():
         data = s3.get_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
         contents = json.loads(data["Body"].read().decode("utf-8"))
         df = pd.DataFrame(contents)
+        st.session_state.df_all = df
         st.session_state.df_individual = df[df["UserName"] == user_name].reset_index(
             drop=True
         )
@@ -64,6 +65,31 @@ def get_aggregate_data():
             return False
         else:
             return False
+
+
+def get_user_name():
+    if "df_all" not in st.session_state:
+        return []
+    else:
+        df_user_name_list = (
+            st.session_state.df_all.sort_values(by="UserName")["UserName"]
+            .unique()
+            .tolist()
+        )
+        return df_user_name_list
+
+
+def get_user_data():
+
+    if (
+        st.session_state.user_select == "Select a User"
+        or st.session_state.user_select is None
+    ):
+        return 0
+
+    st.session_state.df_selected = st.session_state.df_all[
+        st.session_state.df_all["UserName"] == st.session_state.user_select
+    ].reset_index(drop=True)
 
 
 if socket.gethostname() == "MacBookPro.lan":
@@ -92,7 +118,25 @@ if socket.gethostname() == "MacBookPro.lan":
                 use_container_width=True,
             )
 
-    # Render Statistics
+        st.divider()
+        st.subheader("View Stats for other Users")
+        st.selectbox(
+            "Select User",
+            options=get_user_name(),
+            key="user_select",
+            on_change=get_user_data,
+            index=0,
+            placeholder="Select a User",
+        )
+        get_user_data()
+        # Render Statistics
+        if "df_selected" in st.session_state:
+            st.dataframe(
+                data=st.session_state.df_selected,
+                on_select="ignore",
+                hide_index=True,
+                use_container_width=True,
+            )
 
     st.button("Log out", on_click=st.logout)
 else:
