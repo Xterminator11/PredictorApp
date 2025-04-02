@@ -169,4 +169,24 @@ else:
                 use_container_width=True,
             )
 
+        st.divider()
+        st.subheader("View Stats for other Users")
+        st.selectbox(
+            "Select User",
+            options=get_user_name(),
+            key="user_select",
+            on_change=get_user_data,
+            index=0,
+            placeholder="Select a User",
+        )
+        get_user_data()
+        # Render Statistics
+        if "df_selected" in st.session_state:
+            st.dataframe(
+                data=st.session_state.df_selected,
+                on_select="ignore",
+                hide_index=True,
+                use_container_width=True,
+            )
+
         st.button("Log out", on_click=st.logout)
