@@ -187,7 +187,7 @@ for matches in json_match:
             print(data_point)
             final_data_to_save_in_s3.append(
                 {
-                    "MatchNumber": f"{matches.get('MatchNumber')} - {matches.get('HomeTeam')} vs {matches.get('AwayTeam')}",
+                    "MatchNumber": f"{str(matches.get('MatchNumber')).zfill(2)} - {matches.get('HomeTeam')} vs {matches.get('AwayTeam')}",
                     "UserName": users,
                     "AggregatePoints": float(data_point),
                 }
