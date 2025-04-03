@@ -56,6 +56,54 @@ def get_booster_information(match_status, user_name):
     return booster_1, booster_2, booster_3, booster_data
 
 
+def load_match_result_published() -> list:
+
+    s3object = "aggregates/transactional.txt"
+    s3 = boto3.client("s3")
+    try:
+        data = s3.get_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+        contents = json.loads(data["Body"].read().decode("utf-8"))
+        return contents
+
+    except botocore.exceptions.ClientError as e:
+        if e.response["Error"]["Code"] == "404":
+            return []
+        else:
+            return []
+
+
+def is_match_completed(match_id, user_name, contents):
+    data_found = False
+    for records in contents:
+        if (
+            records.get("MatchNumber") == match_id
+            and records.get("UserName") == user_name
+        ):
+            data_found = True
+            break
+    return data_found
+
+
+def get_booster_data(user_list):
+
+    booster_data = {}
+    for user_name in user_list:
+        s3object = f"{user_name}/match_booster.json"
+        s3 = boto3.client("s3")
+        try:
+            data = s3.get_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+            contents = json.loads(data["Body"].read().decode("utf-8"))
+            booster_data[user_name] = contents
+
+        except botocore.exceptions.ClientError as e:
+            if e.response["Error"]["Code"] == "404":
+                booster_data[user_name] = {}
+            else:
+                booster_data[user_name] = {}
+
+    return booster_data
+
+
 def get_individual_data_from_backend(match_id, user_name):
 
     ## Add headers
@@ -166,6 +214,32 @@ def update_statistics(match_status, users):
     return sum(point)
 
 
+def get_user_booster(match_id, user):
+
+    booster_user = booster_data.get(user, None)
+
+    if booster_user is None:
+        return ""
+    else:
+        boosters_value = ""
+        for boosters in booster_user:
+            if booster_user.get(boosters) == match_id:
+                boosters_value = boosters
+                break
+            else:
+                continue
+
+        return (
+            "5x"
+            if boosters_value == "booster_1"
+            else (
+                "3x"
+                if boosters_value == "booster_2"
+                else "2x" if boosters_value == "booster_3" else ""
+            )
+        )
+
+
 s3 = boto3.resource("s3")
 s3_client = boto3.client("s3")
 my_bucket = s3.Bucket("predictor-app-dallas-ipl2025")
@@ -177,21 +251,34 @@ for my_bucket_object in my_bucket.objects.all():
     else:
         user_list.append(my_bucket_object.key.split("/")[0])
 
-final_data_to_save_in_s3 = []
+global booster_data
+booster_data = get_booster_data(user_list)
+
+final_data_to_save_in_s3 = load_match_result_published()
 
 for matches in json_match:
     print("Running for match number {}".format(matches.get("MatchNumber")))
     if matches.get("ResultsPublished") is True:
         for users in list(set(user_list)):
-            data_point = update_statistics(matches, users)
-            print(data_point)
-            final_data_to_save_in_s3.append(
-                {
-                    "MatchNumber": f"{str(matches.get('MatchNumber')).zfill(2)} - {matches.get('HomeTeam')} vs {matches.get('AwayTeam')}",
-                    "UserName": users,
-                    "AggregatePoints": float(data_point),
-                }
-            )
+            match_number_long = f"{str(matches.get('MatchNumber')).zfill(2)} - {matches.get('HomeTeam')} vs {matches.get('AwayTeam')}"
+            if is_match_completed(
+                match_id=match_number_long,
+                user_name=users,
+                contents=final_data_to_save_in_s3,
+            ):
+                print(f"{match_number_long} already updated for user {users}")
+            else:
+                data_point = update_statistics(matches, users)
+                final_data_to_save_in_s3.append(
+                    {
+                        "MatchNumber": match_number_long,
+                        "UserName": users,
+                        "AggregatePoints": float(data_point),
+                        "BoosterIndicator": str(
+                            get_user_booster(matches.get("MatchNumber"), users)
+                        ),
+                    }
+                )
     else:
         continue
 
