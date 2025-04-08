@@ -145,7 +145,7 @@ def store_booster_information():
         if st.session_state.booster_3 is True:
             booster_data["booster_3"] = match_id
 
-        s3object = f"{user_name}/match_booster.json"
+        s3object = f"{user_name}/{get_booster_data_file(match_id)}"
 
         s3 = boto3.resource("s3")
         s3object = s3.Object("predictor-app-dallas-ipl2025", s3object)
