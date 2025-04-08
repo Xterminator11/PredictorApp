@@ -666,43 +666,6 @@
     }
   },
   {
-    "MatchNumber": 21,
-    "RoundNumber": 3,
-    "DateUtc": "2025-04-06 10:00:00",
-    "Location": "Eden Gardens",
-    "HomeTeam": "Kolkata Knight Riders",
-    "AwayTeam": "Lucknow Super Giants",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null,
-    "ActiveIndicator": false,
-    "MatchCompletionStatus": "Not Started",
-    "ResultsPublished": false,
-    "ResultsStats": {
-      "HomeTeam_totalscore": "NOT_PUBLISHED",
-      "HomeTeam_wickets": "NOT_PUBLISHED",
-      "AwayTeam_totalscore": "NOT_PUBLISHED",
-      "AwayTeam_wickets": "NOT_PUBLISHED",
-      "AwayTeam_fours": "NOT_PUBLISHED",
-      "AwayTeam_sixes": "NOT_PUBLISHED",
-      "HomeTeam_fours": "NOT_PUBLISHED",
-      "HomeTeam_sixes": "NOT_PUBLISHED",
-      "HomeTeam_powerplay": "NOT_PUBLISHED",
-      "AwayTeam_powerplay": "NOT_PUBLISHED",
-      "HomeTeam_winner": "NOT_PUBLISHED",
-      "AwayTeam_winner": "NOT_PUBLISHED",
-      "StatsLink": "NOT_PUBLISHED"
-    },
-    "PredictionResults": {
-      "winner": "NOT_PUBLISHED",
-      "fours": "NOT_PUBLISHED",
-      "sixes": "NOT_PUBLISHED",
-      "wickets": "NOT_PUBLISHED",
-      "powerplay": "NOT_PUBLISHED",
-      "totalscore": "NOT_PUBLISHED"
-    }
-  },
-  {
     "MatchNumber": 19,
     "RoundNumber": 3,
     "DateUtc": "2025-04-06 14:00:00",
@@ -774,6 +737,43 @@
       "wickets": "Royal Challengers Bengaluru",
       "powerplay": "Royal Challengers Bengaluru",
       "totalscore": "430"
+    }
+  },
+  {
+    "MatchNumber": 21,
+    "RoundNumber": 3,
+    "DateUtc": "2025-04-06 10:00:00",
+    "Location": "Eden Gardens",
+    "HomeTeam": "Kolkata Knight Riders",
+    "AwayTeam": "Lucknow Super Giants",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null,
+    "ActiveIndicator": false,
+    "MatchCompletionStatus": "Not Started",
+    "ResultsPublished": false,
+    "ResultsStats": {
+      "HomeTeam_totalscore": "NOT_PUBLISHED",
+      "HomeTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_totalscore": "NOT_PUBLISHED",
+      "AwayTeam_wickets": "NOT_PUBLISHED",
+      "AwayTeam_fours": "NOT_PUBLISHED",
+      "AwayTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_fours": "NOT_PUBLISHED",
+      "HomeTeam_sixes": "NOT_PUBLISHED",
+      "HomeTeam_powerplay": "NOT_PUBLISHED",
+      "AwayTeam_powerplay": "NOT_PUBLISHED",
+      "HomeTeam_winner": "NOT_PUBLISHED",
+      "AwayTeam_winner": "NOT_PUBLISHED",
+      "StatsLink": "NOT_PUBLISHED"
+    },
+    "PredictionResults": {
+      "winner": "NOT_PUBLISHED",
+      "fours": "NOT_PUBLISHED",
+      "sixes": "NOT_PUBLISHED",
+      "wickets": "NOT_PUBLISHED",
+      "powerplay": "NOT_PUBLISHED",
+      "totalscore": "NOT_PUBLISHED"
     }
   },
   {

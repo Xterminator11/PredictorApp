@@ -21,13 +21,33 @@ json_match = json.loads(
 )
 
 
+def get_booster_data_file(match_id):
+
+    # 1.⁠ ⁠Game 1 to Game 20
+    # 2.⁠ ⁠⁠Game 21 to Game 40
+    # 3.⁠ ⁠⁠Game 41 to Game 60
+    # 4.⁠ ⁠⁠Game 61 to Game 70
+    # 5.⁠ ⁠⁠Game 71 to Game 74
+
+    if 0 <= match_id <= 20:
+        return "match_booster.json"
+    elif 21 <= match_id <= 40:
+        return "match_booster_1.json"
+    elif 41 <= match_id <= 60:
+        return "match_booster_2.json"
+    elif 61 <= match_id <= 70:
+        return "match_booster_3.json"
+    elif 71 <= match_id <= 74:
+        return "match_booster_4.json"
+
+
 def get_booster_information(match_status, user_name):
 
     user_name = str(user_name).replace(" ", "").lower()
     match_id = match_status.get("MatchNumber")
 
     booster_data_found = False
-    s3object = f"{user_name}/match_booster.json"
+    s3object = f"{user_name}/{get_booster_data_file(match_id)}"
     s3 = boto3.client("s3")
     try:
         s3.head_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
