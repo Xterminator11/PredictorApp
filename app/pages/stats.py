@@ -183,13 +183,48 @@ def update_statistics():
             }
         )
         st.session_state.df = df
+        ## You Individual Prediction
+
+        questions = []
+        prediction = []
+        correct = []
+        point = []
+
+        for question in st.session_state.json_metadata.get("question_list"):
+            questions.append(question.get("questions"))
+            correct_selection = match_status.get("PredictionResults").get(
+                question.get("q_key")
+            )
+            correct.append(correct_selection)
+
+            match_selection = get_individual_data_from_backend(
+                match_status.get("MatchNumber")
+            )
+            user_selection = ""
+            if match_selection:
+                for q_key in match_selection:
+                    if q_key.get("q_key") == question.get("q_key"):
+                        user_selection = q_key.get("q_val")
+                        break
+                    else:
+                        continue
+            else:
+                if question.get("q_key") == "totalscore":
+                    user_selection = 0
+                else:
+                    user_selection = ""
+            prediction.append(str(user_selection))
+
+            # Point Selection
+
+            point.append("0")
 
         df_player = pd.DataFrame(
             {
-                "Question": ["Not Available"],
-                "Your Prediction": ["Not Available"],
-                "Correct Prediction": ["Not Available"],
-                "Points": ["Not Available"],
+                "Question": questions,
+                "Your Prediction": prediction,
+                "Correct Prediction": correct,
+                "Points": point,
             }
         )
         st.session_state.df_player = df_player
@@ -305,19 +340,38 @@ def update_statistics():
 
 if socket.gethostname() == "MacBookPro.lan":
     st.session_state.user_name = "Gururaj Rao"
-    st.session_state.next_matches = get_next_match_from_json()
+    st.session_state.next_matches = json.loads(get_next_match_from_json())
+    if len(st.session_state.next_matches) != 0:
+        st.session_state.current_match_dictionary = st.session_state.next_matches[0]
+    else:
+        st.session_state.current_match_dictionary = {}
+
     st.subheader("This section contains individual games")
     selections = []
     for matches in st.session_state.json_match:
-        if matches.get("MatchCompletionStatus") == "Completed":
+        if matches.get("MatchCompletionStatus") == "Completed" or matches.get(
+            "MatchNumber"
+        ) == (st.session_state.current_match_dictionary.get("MatchNumber") - 1):
             match_number = (
                 str(matches.get("MatchNumber"))
                 if matches.get("MatchNumber") > 9
                 else f"0{matches.get("MatchNumber")}"
             )
-            selections.append(
-                f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
-            )
+            if matches.get("MatchNumber") == (
+                st.session_state.current_match_dictionary.get("MatchNumber") - 1
+            ):
+                if matches.get("MatchCompletionStatus") == "Completed":
+                    selections.append(
+                        f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+                    )
+                else:
+                    selections.append(
+                        f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} (In Progress)"
+                    )
+            else:
+                selections.append(
+                    f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+                )
     selections.sort(reverse=True)
     st.selectbox(
         "Pick The Game",
@@ -367,20 +421,38 @@ else:
     if not st.experimental_user.is_logged_in or "name" not in st.experimental_user:
         login_screen()
     else:
-        st.session_state.next_matches = get_next_match_from_json()
-        st.session_state.user_name = st.experimental_user.name
+        st.session_state.next_matches = json.loads(get_next_match_from_json())
+        if len(st.session_state.next_matches) != 0:
+            st.session_state.current_match_dictionary = st.session_state.next_matches[0]
+        else:
+            st.session_state.current_match_dictionary = {}
+
         st.subheader("This section contains individual games")
         selections = []
         for matches in st.session_state.json_match:
-            if matches.get("MatchCompletionStatus") == "Completed":
+            if matches.get("MatchCompletionStatus") == "Completed" or matches.get(
+                "MatchNumber"
+            ) == (st.session_state.current_match_dictionary.get("MatchNumber") - 1):
                 match_number = (
                     str(matches.get("MatchNumber"))
                     if matches.get("MatchNumber") > 9
                     else f"0{matches.get("MatchNumber")}"
                 )
-                selections.append(
-                    f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
-                )
+                if matches.get("MatchNumber") == (
+                    st.session_state.current_match_dictionary.get("MatchNumber") - 1
+                ):
+                    if matches.get("MatchCompletionStatus") == "Completed":
+                        selections.append(
+                            f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+                        )
+                    else:
+                        selections.append(
+                            f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} (In Progress)"
+                        )
+                else:
+                    selections.append(
+                        f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+                    )
         selections.sort(reverse=True)
         st.selectbox(
             "Pick The Game",
