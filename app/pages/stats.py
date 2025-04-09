@@ -421,6 +421,7 @@ else:
     if not st.experimental_user.is_logged_in or "name" not in st.experimental_user:
         login_screen()
     else:
+        st.session_state.user_name = st.experimental_user.name
         st.session_state.next_matches = json.loads(get_next_match_from_json())
         if len(st.session_state.next_matches) != 0:
             st.session_state.current_match_dictionary = st.session_state.next_matches[0]
