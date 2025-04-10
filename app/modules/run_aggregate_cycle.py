@@ -104,24 +104,23 @@ def is_match_completed(match_id, user_name, contents):
     return data_found
 
 
-def get_booster_data(user_list):
+def get_booster_data(user_name, match_id):
 
-    booster_data = {}
-    for user_name in user_list:
-        s3object = f"{user_name}/match_booster.json"
-        s3 = boto3.client("s3")
-        try:
-            data = s3.get_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
-            contents = json.loads(data["Body"].read().decode("utf-8"))
-            booster_data[user_name] = contents
+    booster_data_local = {}
+    s3object = f"{user_name}/{get_booster_data_file(match_id)}"
+    s3 = boto3.client("s3")
+    try:
+        data = s3.get_object(Bucket="predictor-app-dallas-ipl2025", Key=s3object)
+        contents = json.loads(data["Body"].read().decode("utf-8"))
+        booster_data_local[user_name] = contents
 
-        except botocore.exceptions.ClientError as e:
-            if e.response["Error"]["Code"] == "404":
-                booster_data[user_name] = {}
-            else:
-                booster_data[user_name] = {}
+    except botocore.exceptions.ClientError as e:
+        if e.response["Error"]["Code"] == "404":
+            booster_data_local[user_name] = {}
+        else:
+            booster_data_local[user_name] = {}
 
-    return booster_data
+    return booster_data_local
 
 
 def get_individual_data_from_backend(match_id, user_name):
@@ -271,8 +270,6 @@ for my_bucket_object in my_bucket.objects.all():
     else:
         user_list.append(my_bucket_object.key.split("/")[0])
 
-global booster_data
-booster_data = get_booster_data(user_list)
 
 final_data_to_save_in_s3 = load_match_result_published()
 
@@ -288,7 +285,11 @@ for matches in json_match:
             ):
                 print(f"{match_number_long} already updated for user {users}")
             else:
+                global booster_data
+                booster_data = get_booster_data(users, matches.get("MatchNumber"))
+
                 data_point = update_statistics(matches, users)
+                print(f"{users} : {float(data_point)}")
                 final_data_to_save_in_s3.append(
                     {
                         "MatchNumber": match_number_long,
