@@ -2,12 +2,10 @@ import streamlit as st
 import json
 import boto3
 import os
-from jsonpath_ng.ext import parse
 import pandas as pd
 from modules.navigator import Navbar
 import socket
 import botocore
-from botocore.errorfactory import ClientError
 
 st.set_page_config(
     page_title="Leader Board",
@@ -98,6 +96,7 @@ if socket.gethostname() == "MacBookPro.lan":
     selections = []
     get_aggregate_data()
     with st.container():
+
         st.divider()
         st.subheader("Overall Leaderboard")
         if "df_leaderboard" in st.session_state:
