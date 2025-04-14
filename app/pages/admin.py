@@ -49,7 +49,7 @@ def update_results(input_metrics):
             if st.session_state.HomeTeam_winner == "Won"
             else st.session_state.away_team
         )
-    elif input_metrics == "wicket":
+    elif input_metrics == "wickets":
         if st.session_state.HomeTeam_wickets == st.session_state.AwayTeam_wickets:
             return "Tie"
         else:
