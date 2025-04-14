@@ -254,7 +254,7 @@ def cleanup_previous_instance():
 
 def create_input_form_match_details():
     cleanup_previous_instance()
-    update_match_label()
+    # update_match_label()
     home_team, away_team = st.columns(2, gap="medium")
     st.text_input(label="StatsLink", key="StatsLink")
     st.button(label="Submit", on_click=store_match_details)
@@ -424,6 +424,7 @@ if socket.gethostname() == "MacBookPro.lan":
                             f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
                         )
             selections.sort(reverse=True)
+            # create_input_form_match_details()
             st.selectbox(
                 "Pick The Game",
                 options=selections,
@@ -433,7 +434,7 @@ if socket.gethostname() == "MacBookPro.lan":
                 key="selected_option",
                 disabled=False,
             )
-
+        with st.container():
             create_input_form_match_details()
         st.button("Log out", on_click=st.logout)
     else:
