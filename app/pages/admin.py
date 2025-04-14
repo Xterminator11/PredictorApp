@@ -148,62 +148,62 @@ def update_match_label():
 
         for matches in st.session_state.json_match:
             if matches.get("MatchNumber") == st.session_state.match_number_selected:
-                st.session_state.HomeTeam_totalscore = (
-                    matches.get("ResultsStats").get("HomeTeam_totalscore")
+                st.session_state["HomeTeam_totalscore"] = (
+                    int(matches.get("ResultsStats").get("HomeTeam_totalscore"))
                     if matches.get("ResultsStats").get("HomeTeam_totalscore")
                     != "NOT_PUBLISHED"
                     else 0
                 )
                 st.session_state.HomeTeam_wickets = (
-                    matches.get("ResultsStats").get("HomeTeam_wickets")
+                    int(matches.get("ResultsStats").get("HomeTeam_wickets"))
                     if matches.get("ResultsStats").get("HomeTeam_wickets")
                     != "NOT_PUBLISHED"
                     else 0
                 )
                 st.session_state.AwayTeam_totalscore = (
-                    matches.get("ResultsStats").get("AwayTeam_totalscore")
+                    int(matches.get("ResultsStats").get("AwayTeam_totalscore"))
                     if matches.get("ResultsStats").get("AwayTeam_totalscore")
                     != "NOT_PUBLISHED"
                     else 0
                 )
                 st.session_state.AwayTeam_wickets = (
-                    matches.get("ResultsStats").get("AwayTeam_wickets")
+                    int(matches.get("ResultsStats").get("AwayTeam_wickets"))
                     if matches.get("ResultsStats").get("AwayTeam_wickets")
                     != "NOT_PUBLISHED"
                     else 0
                 )
                 st.session_state.AwayTeam_fours = (
-                    matches.get("ResultsStats").get("AwayTeam_fours")
+                    int(matches.get("ResultsStats").get("AwayTeam_fours"))
                     if matches.get("ResultsStats").get("AwayTeam_fours")
                     != "NOT_PUBLISHED"
                     else 0
                 )
                 st.session_state.AwayTeam_sixes = (
-                    matches.get("ResultsStats").get("AwayTeam_sixes")
+                    int(matches.get("ResultsStats").get("AwayTeam_sixes"))
                     if matches.get("ResultsStats").get("AwayTeam_sixes")
                     != "NOT_PUBLISHED"
                     else 0
                 )
                 st.session_state.HomeTeam_fours = (
-                    matches.get("ResultsStats").get("HomeTeam_fours")
+                    int(matches.get("ResultsStats").get("HomeTeam_fours"))
                     if matches.get("ResultsStats").get("HomeTeam_fours")
                     != "NOT_PUBLISHED"
                     else 0
                 )
                 st.session_state.HomeTeam_sixes = (
-                    matches.get("ResultsStats").get("HomeTeam_sixes")
+                    int(matches.get("ResultsStats").get("HomeTeam_sixes"))
                     if matches.get("ResultsStats").get("HomeTeam_sixes")
                     != "NOT_PUBLISHED"
                     else 0
                 )
                 st.session_state.HomeTeam_powerplay = (
-                    matches.get("ResultsStats").get("HomeTeam_powerplay")
+                    int(matches.get("ResultsStats").get("HomeTeam_powerplay"))
                     if matches.get("ResultsStats").get("HomeTeam_powerplay")
                     != "NOT_PUBLISHED"
                     else 0
                 )
                 st.session_state.AwayTeam_powerplay = (
-                    matches.get("ResultsStats").get("AwayTeam_powerplay")
+                    int(matches.get("ResultsStats").get("AwayTeam_powerplay"))
                     if matches.get("ResultsStats").get("AwayTeam_powerplay")
                     != "NOT_PUBLISHED"
                     else 0
@@ -212,13 +212,13 @@ def update_match_label():
                     matches.get("ResultsStats").get("HomeTeam_winner")
                     if matches.get("ResultsStats").get("HomeTeam_winner")
                     != "NOT_PUBLISHED"
-                    else "NOT_PUBLISHED"
+                    else "Won"
                 )
                 st.session_state.AwayTeam_winner = (
                     matches.get("ResultsStats").get("AwayTeam_winner")
                     if matches.get("ResultsStats").get("AwayTeam_winner")
                     != "NOT_PUBLISHED"
-                    else "NOT_PUBLISHED"
+                    else "Won"
                 )
                 st.session_state.StatsLink = (
                     matches.get("ResultsStats").get("StatsLink")
@@ -254,6 +254,7 @@ def cleanup_previous_instance():
 
 def create_input_form_match_details():
     cleanup_previous_instance()
+    update_match_label()
     home_team, away_team = st.columns(2, gap="medium")
     st.text_input(label="StatsLink", key="StatsLink")
     st.button(label="Submit", on_click=store_match_details)
@@ -264,11 +265,6 @@ def create_input_form_match_details():
             format="%u",
             min_value=0,
             max_value=300,
-            value=int(
-                st.session_state.HomeTeam_totalscore
-                if "HomeTeam_totalscore" in st.session_state
-                else 0
-            ),
         )
         st.number_input(
             label=f"{st.session_state.home_team} Wickets",
@@ -449,12 +445,72 @@ else:
     else:
         st.session_state.user_name = st.experimental_user.name
         st.subheader("Admin Page")
+        st.session_state.next_matches = json.loads(get_next_match_from_json())
+        if len(st.session_state.next_matches) != 0:
+            st.session_state.current_match_dictionary = st.session_state.next_matches[0]
+        else:
+            st.session_state.current_match_dictionary = {}
+
+        if "home_team" not in st.session_state:
+            st.session_state.home_team = "HomeTeam"
+        if "away_team" not in st.session_state:
+            st.session_state.away_team = "AwayTeam"
+        if "match_number_selected" not in st.session_state:
+            st.session_state.match_number_selected = 0
 
         if st.session_state.user_name == "Gururaj Rao":
-
             with st.container():
-                pass
+                st.subheader("Select team and update stats")
+                selections = []
+                for matches in st.session_state.json_match:
+                    if matches.get("MatchCompletionStatus") == "Completed" or (
+                        matches.get("MatchNumber")
+                        == (
+                            st.session_state.current_match_dictionary.get("MatchNumber")
+                            - 1
+                        )
+                        or matches.get("MatchNumber")
+                        == (
+                            st.session_state.current_match_dictionary.get("MatchNumber")
+                            - 2
+                        )
+                    ):
+                        match_number = (
+                            str(matches.get("MatchNumber"))
+                            if matches.get("MatchNumber") > 9
+                            else f"0{matches.get("MatchNumber")}"
+                        )
+                        if matches.get("MatchNumber") == (
+                            st.session_state.current_match_dictionary.get("MatchNumber")
+                            - 1
+                        ) or matches.get("MatchNumber") == (
+                            st.session_state.current_match_dictionary.get("MatchNumber")
+                            - 2
+                        ):
+                            if matches.get("MatchCompletionStatus") == "Completed":
+                                selections.append(
+                                    f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+                                )
+                            else:
+                                selections.append(
+                                    f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} (In Progress)"
+                                )
+                        else:
+                            selections.append(
+                                f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+                            )
+                selections.sort(reverse=True)
+                st.selectbox(
+                    "Pick The Game",
+                    options=selections,
+                    on_change=update_match_label,
+                    index=None,
+                    placeholder="Choose a match",
+                    key="selected_option",
+                    disabled=False,
+                )
+
+                create_input_form_match_details()
             st.button("Log out", on_click=st.logout)
         else:
             st.error("You are not authorized to access this page", icon="‼️")
-            # st.button("Log out", on_click=st.logout)
