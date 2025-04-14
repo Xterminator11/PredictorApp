@@ -428,8 +428,8 @@ if socket.gethostname() == "MacBookPro.lan":
                 "Pick The Game",
                 options=selections,
                 on_change=update_match_label,
-                index=None,
-                placeholder="Choose a match",
+                # index=None,
+                # placeholder="Choose a match",
                 key="selected_option",
                 disabled=False,
             )
