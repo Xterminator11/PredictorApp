@@ -336,7 +336,7 @@ def create_input_form_match_details():
             max_value=150,
         )
         st.selectbox(
-            label=f"{st.session_state.home_team} Result",
+            label=f"{st.session_state.away_team} Result",
             key="AwayTeam_winner",
             options=["Won", "Lost"],
         )
