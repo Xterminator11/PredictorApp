@@ -303,7 +303,7 @@ for matches in json_match:
     else:
         continue
 
-print(json.dumps(final_data_to_save_in_s3, indent=3))
+# print(json.dumps(final_data_to_save_in_s3, indent=3))
 
 s3object = "aggregates/transactional.txt"
 s3 = boto3.resource("s3")
@@ -319,7 +319,6 @@ grouped_counts = (
     .sum()
     .sort_values(by="AggregatePoints", ascending=False)
 )
-print(grouped_counts)
 grouped_counts = grouped_counts.reset_index(names="UserName")
 # sum_values = grouped["AggregatePoints"].sum()
 print(grouped_counts)
