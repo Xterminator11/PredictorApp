@@ -338,90 +338,11 @@ def update_statistics():
         st.session_state.df_player = df_player
 
 
-if socket.gethostname() == "MacBookPro.lan":
-    st.session_state.user_name = "Gururaj Rao"
-    st.session_state.next_matches = json.loads(get_next_match_from_json())
-    if len(st.session_state.next_matches) != 0:
-        st.session_state.current_match_dictionary = st.session_state.next_matches[0]
-    else:
-        st.session_state.current_match_dictionary = {}
-
-    st.subheader("This section contains individual games")
-    selections = []
-    for matches in st.session_state.json_match:
-        if matches.get("MatchCompletionStatus") == "Completed" or matches.get(
-            "MatchNumber"
-        ) == (st.session_state.current_match_dictionary.get("MatchNumber") - 1):
-            match_number = (
-                str(matches.get("MatchNumber"))
-                if matches.get("MatchNumber") > 9
-                else f"0{matches.get("MatchNumber")}"
-            )
-            if matches.get("MatchNumber") == (
-                st.session_state.current_match_dictionary.get("MatchNumber") - 1
-            ):
-                if matches.get("MatchCompletionStatus") == "Completed":
-                    selections.append(
-                        f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
-                    )
-                else:
-                    selections.append(
-                        f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} (In Progress)"
-                    )
-            else:
-                selections.append(
-                    f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
-                )
-    selections.sort(reverse=True)
-    st.selectbox(
-        "Pick The Game",
-        options=selections,
-        on_change=update_statistics,
-        # index=None,
-        # placeholder="Choose a match",
-        key="selected_option",
-        disabled=False,
-    )
-    update_statistics()
-
-    with st.container():
-        st.divider()
-        st.subheader("Statistics of the match")
-        if "statistics_url" in st.session_state:
-            st.markdown(
-                f"Statistics Provided by [espncricinfo]({st.session_state.statistics_url})"
-            )
-        if "df" in st.session_state:
-            st.dataframe(
-                data=st.session_state.df,
-                on_select="ignore",
-                hide_index=True,
-                use_container_width=True,
-            )
-
-        st.divider()
-        if st.session_state.booster_value != 1:
-            st.subheader(
-                f":red[Booster selected for this game : {st.session_state.booster_value}x]"
-            )
-        st.subheader("Prediction Results for the match")
-        if "df_player" in st.session_state:
-            st.dataframe(
-                data=st.session_state.df_player,
-                on_select="ignore",
-                hide_index=True,
-                use_container_width=True,
-            )
-
-    # Render Statistics
-
-    st.button("Log out", on_click=st.logout)
+if st.suspend == True:
+    st.header("Due to Operations Sindoor !! Prediction game is suspended")
 else:
-
-    if not st.experimental_user.is_logged_in or "name" not in st.experimental_user:
-        login_screen()
-    else:
-        st.session_state.user_name = st.experimental_user.name
+    if socket.gethostname() == "MacBookPro.lan":
+        st.session_state.user_name = "Gururaj Rao"
         st.session_state.next_matches = json.loads(get_next_match_from_json())
         if len(st.session_state.next_matches) != 0:
             st.session_state.current_match_dictionary = st.session_state.next_matches[0]
@@ -462,8 +383,8 @@ else:
             # index=None,
             # placeholder="Choose a match",
             key="selected_option",
+            disabled=False,
         )
-
         update_statistics()
 
         with st.container():
@@ -471,7 +392,7 @@ else:
             st.subheader("Statistics of the match")
             if "statistics_url" in st.session_state:
                 st.markdown(
-                    f"Statistics Provided by [link]({st.session_state.statistics_url})"
+                    f"Statistics Provided by [espncricinfo]({st.session_state.statistics_url})"
                 )
             if "df" in st.session_state:
                 st.dataframe(
@@ -494,4 +415,88 @@ else:
                     hide_index=True,
                     use_container_width=True,
                 )
+
+        # Render Statistics
+
         st.button("Log out", on_click=st.logout)
+    else:
+
+        if not st.experimental_user.is_logged_in or "name" not in st.experimental_user:
+            login_screen()
+        else:
+            st.session_state.user_name = st.experimental_user.name
+            st.session_state.next_matches = json.loads(get_next_match_from_json())
+            if len(st.session_state.next_matches) != 0:
+                st.session_state.current_match_dictionary = (
+                    st.session_state.next_matches[0]
+                )
+            else:
+                st.session_state.current_match_dictionary = {}
+
+            st.subheader("This section contains individual games")
+            selections = []
+            for matches in st.session_state.json_match:
+                if matches.get("MatchCompletionStatus") == "Completed" or matches.get(
+                    "MatchNumber"
+                ) == (st.session_state.current_match_dictionary.get("MatchNumber") - 1):
+                    match_number = (
+                        str(matches.get("MatchNumber"))
+                        if matches.get("MatchNumber") > 9
+                        else f"0{matches.get("MatchNumber")}"
+                    )
+                    if matches.get("MatchNumber") == (
+                        st.session_state.current_match_dictionary.get("MatchNumber") - 1
+                    ):
+                        if matches.get("MatchCompletionStatus") == "Completed":
+                            selections.append(
+                                f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+                            )
+                        else:
+                            selections.append(
+                                f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} (In Progress)"
+                            )
+                    else:
+                        selections.append(
+                            f"{match_number} - {matches.get("HomeTeam")} vs {matches.get("AwayTeam")} ({matches.get("MatchCompletionStatus")})"
+                        )
+            selections.sort(reverse=True)
+            st.selectbox(
+                "Pick The Game",
+                options=selections,
+                on_change=update_statistics,
+                # index=None,
+                # placeholder="Choose a match",
+                key="selected_option",
+            )
+
+            update_statistics()
+
+            with st.container():
+                st.divider()
+                st.subheader("Statistics of the match")
+                if "statistics_url" in st.session_state:
+                    st.markdown(
+                        f"Statistics Provided by [link]({st.session_state.statistics_url})"
+                    )
+                if "df" in st.session_state:
+                    st.dataframe(
+                        data=st.session_state.df,
+                        on_select="ignore",
+                        hide_index=True,
+                        use_container_width=True,
+                    )
+
+                st.divider()
+                if st.session_state.booster_value != 1:
+                    st.subheader(
+                        f":red[Booster selected for this game : {st.session_state.booster_value}x]"
+                    )
+                st.subheader("Prediction Results for the match")
+                if "df_player" in st.session_state:
+                    st.dataframe(
+                        data=st.session_state.df_player,
+                        on_select="ignore",
+                        hide_index=True,
+                        use_container_width=True,
+                    )
+            st.button("Log out", on_click=st.logout)

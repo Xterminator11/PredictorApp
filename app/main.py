@@ -12,6 +12,8 @@ from botocore.errorfactory import ClientError
 from jsonpath_ng.ext import parse
 from modules.navigator import Navbar
 
+st.suspend = True
+
 st.session_state.json_metadata = json.loads(
     open(
         os.path.join(os.path.dirname(__file__), "metadata.json"), "r", encoding="utf-8"
@@ -467,36 +469,39 @@ def display_details_of_the_prediction():
         return True
 
 
-if socket.gethostname() == "MacBookPro.lan":
-    st.session_state.user_name = "Gururaj Rao"
-    st.session_state.next_matches = get_next_match_from_json()
-    st.header(f"Welcome, {st.session_state.user_name}!")
-    body_rendering()
-    ## Add Questions
-    check_match_date_selected = check_match_date_selected()
-    if not check_match_date_selected:
-        form_rendering()
-    else:
-        st.header("Your selections are locked for today")
-        display_details_of_the_prediction()
-
-    # Render Statistics
-
-    st.button("Log out", on_click=st.logout)
+if st.suspend == True:
+    st.header("Due to Operations Sindoor !! Prediction game is suspended")
 else:
-    if not st.experimental_user.is_logged_in:
-        login_screen()
-    else:
-        st.session_state.user_name = st.experimental_user.name
+    if socket.gethostname() == "MacBookPro.lan":
+        st.session_state.user_name = "Gururaj Rao"
         st.session_state.next_matches = get_next_match_from_json()
         st.header(f"Welcome, {st.session_state.user_name}!")
         body_rendering()
+        ## Add Questions
         check_match_date_selected = check_match_date_selected()
         if not check_match_date_selected:
             form_rendering()
         else:
             st.header("Your selections are locked for today")
             display_details_of_the_prediction()
-        ## Add Questions
+
+        # Render Statistics
 
         st.button("Log out", on_click=st.logout)
+    else:
+        if not st.experimental_user.is_logged_in:
+            login_screen()
+        else:
+            st.session_state.user_name = st.experimental_user.name
+            st.session_state.next_matches = get_next_match_from_json()
+            st.header(f"Welcome, {st.session_state.user_name}!")
+            body_rendering()
+            check_match_date_selected = check_match_date_selected()
+            if not check_match_date_selected:
+                form_rendering()
+            else:
+                st.header("Your selections are locked for today")
+                display_details_of_the_prediction()
+            ## Add Questions
+
+            st.button("Log out", on_click=st.logout)

@@ -90,102 +90,105 @@ def get_user_data():
     ].reset_index(drop=True)
 
 
-if socket.gethostname() == "MacBookPro.lan":
-    st.session_state.user_name = "Gururaj Rao"
-    st.subheader("Leaderboard")
-    selections = []
-    get_aggregate_data()
-    with st.container():
-
-        st.divider()
-        st.subheader("Overall Leaderboard")
-        if "df_leaderboard" in st.session_state:
-            st.dataframe(
-                data=st.session_state.df_leaderboard,
-                on_select="ignore",
-                hide_index=True,
-                use_container_width=True,
-            )
-
-        st.divider()
-        st.subheader("Your Selections")
-        if "df_individual" in st.session_state:
-            st.dataframe(
-                data=st.session_state.df_individual,
-                on_select="ignore",
-                hide_index=True,
-                use_container_width=True,
-            )
-
-        st.divider()
-        st.subheader("View Stats for other Users")
-        st.selectbox(
-            "Select User",
-            options=get_user_name(),
-            key="user_select",
-            on_change=get_user_data,
-            index=0,
-            placeholder="Select a User",
-        )
-        get_user_data()
-        # Render Statistics
-        if "df_selected" in st.session_state:
-            st.dataframe(
-                data=st.session_state.df_selected,
-                on_select="ignore",
-                hide_index=True,
-                use_container_width=True,
-            )
-
-    st.button("Log out", on_click=st.logout)
+if st.suspend == True:
+    st.header("Due to Operations Sindoor !! Prediction game is suspended")
 else:
-    if not st.experimental_user.is_logged_in or "name" not in st.experimental_user:
-        login_screen()
-    else:
-        st.session_state.user_name = st.experimental_user.name
-    st.subheader("Leaderboard")
-    selections = []
-    get_aggregate_data()
+    if socket.gethostname() == "MacBookPro.lan":
+        st.session_state.user_name = "Gururaj Rao"
+        st.subheader("Leaderboard")
+        selections = []
+        get_aggregate_data()
+        with st.container():
 
-    with st.container():
-        st.divider()
-        st.subheader("Overall Leaderboard")
-        if "df_leaderboard" in st.session_state:
-            st.dataframe(
-                data=st.session_state.df_leaderboard,
-                on_select="ignore",
-                hide_index=True,
-                use_container_width=True,
-            )
+            st.divider()
+            st.subheader("Overall Leaderboard")
+            if "df_leaderboard" in st.session_state:
+                st.dataframe(
+                    data=st.session_state.df_leaderboard,
+                    on_select="ignore",
+                    hide_index=True,
+                    use_container_width=True,
+                )
 
-        st.divider()
-        st.subheader("Your Selections")
-        if "df_individual" in st.session_state:
-            st.dataframe(
-                data=st.session_state.df_individual,
-                on_select="ignore",
-                hide_index=True,
-                use_container_width=True,
-            )
+            st.divider()
+            st.subheader("Your Selections")
+            if "df_individual" in st.session_state:
+                st.dataframe(
+                    data=st.session_state.df_individual,
+                    on_select="ignore",
+                    hide_index=True,
+                    use_container_width=True,
+                )
 
-        st.divider()
-        st.subheader("View Stats for other Users")
-        st.selectbox(
-            "Select User",
-            options=get_user_name(),
-            key="user_select",
-            on_change=get_user_data,
-            index=0,
-            placeholder="Select a User",
-        )
-        get_user_data()
-        # Render Statistics
-        if "df_selected" in st.session_state:
-            st.dataframe(
-                data=st.session_state.df_selected,
-                on_select="ignore",
-                hide_index=True,
-                use_container_width=True,
+            st.divider()
+            st.subheader("View Stats for other Users")
+            st.selectbox(
+                "Select User",
+                options=get_user_name(),
+                key="user_select",
+                on_change=get_user_data,
+                index=0,
+                placeholder="Select a User",
             )
+            get_user_data()
+            # Render Statistics
+            if "df_selected" in st.session_state:
+                st.dataframe(
+                    data=st.session_state.df_selected,
+                    on_select="ignore",
+                    hide_index=True,
+                    use_container_width=True,
+                )
 
         st.button("Log out", on_click=st.logout)
+    else:
+        if not st.experimental_user.is_logged_in or "name" not in st.experimental_user:
+            login_screen()
+        else:
+            st.session_state.user_name = st.experimental_user.name
+        st.subheader("Leaderboard")
+        selections = []
+        get_aggregate_data()
+
+        with st.container():
+            st.divider()
+            st.subheader("Overall Leaderboard")
+            if "df_leaderboard" in st.session_state:
+                st.dataframe(
+                    data=st.session_state.df_leaderboard,
+                    on_select="ignore",
+                    hide_index=True,
+                    use_container_width=True,
+                )
+
+            st.divider()
+            st.subheader("Your Selections")
+            if "df_individual" in st.session_state:
+                st.dataframe(
+                    data=st.session_state.df_individual,
+                    on_select="ignore",
+                    hide_index=True,
+                    use_container_width=True,
+                )
+
+            st.divider()
+            st.subheader("View Stats for other Users")
+            st.selectbox(
+                "Select User",
+                options=get_user_name(),
+                key="user_select",
+                on_change=get_user_data,
+                index=0,
+                placeholder="Select a User",
+            )
+            get_user_data()
+            # Render Statistics
+            if "df_selected" in st.session_state:
+                st.dataframe(
+                    data=st.session_state.df_selected,
+                    on_select="ignore",
+                    hide_index=True,
+                    use_container_width=True,
+                )
+
+            st.button("Log out", on_click=st.logout)
