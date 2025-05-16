@@ -12,7 +12,7 @@ from botocore.errorfactory import ClientError
 from jsonpath_ng.ext import parse
 from modules.navigator import Navbar
 
-st.suspend = True
+st.suspend = False
 
 st.session_state.json_metadata = json.loads(
     open(
