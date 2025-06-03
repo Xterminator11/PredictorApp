@@ -13,6 +13,7 @@ from jsonpath_ng.ext import parse
 from modules.navigator import Navbar
 
 st.suspend = False
+st.ipl_completed = True
 
 st.session_state.json_metadata = json.loads(
     open(
@@ -471,23 +472,29 @@ def display_details_of_the_prediction():
 
 if st.suspend == True:
     st.header("Due to Operations Sindoor !! Prediction game is suspended")
+elif st.ipl_completed:
+    st.header("IPL Completed thanks for playing predictor game")
 else:
     if socket.gethostname() == "MacBookPro.lan":
         st.session_state.user_name = "Gururaj Rao"
         st.session_state.next_matches = get_next_match_from_json()
-        st.header(f"Welcome, {st.session_state.user_name}!")
-        body_rendering()
-        ## Add Questions
-        check_match_date_selected = check_match_date_selected()
-        if not check_match_date_selected:
-            form_rendering()
+
+        if json.loads(st.session_state.next_matches[0]).get("MatchNumber") == "75":
+            st.header(f"IPL Is Done ! Thanks for Playing Predictor game!")
         else:
-            st.header("Your selections are locked for today")
-            display_details_of_the_prediction()
+            st.header(f"Welcome, {st.session_state.user_name}!")
+            body_rendering()
+            ## Add Questions
+            check_match_date_selected = check_match_date_selected()
+            if not check_match_date_selected:
+                form_rendering()
+            else:
+                st.header("Your selections are locked for today")
+                display_details_of_the_prediction()
 
-        # Render Statistics
+            # Render Statistics
 
-        st.button("Log out", on_click=st.logout)
+            st.button("Log out", on_click=st.logout)
     else:
         if not st.experimental_user.is_logged_in:
             login_screen()

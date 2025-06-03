@@ -64,7 +64,7 @@ def get_next_match_from_json() -> list:
     ]
 
     if len(data_frame) == 0:
-        return []
+        return "{}"
     return data_frame.fillna("").to_json(
         orient="records", date_format="iso", date_unit="s"
     )
